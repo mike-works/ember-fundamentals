@@ -1,0 +1,16 @@
+{{!--<h1>{{upcase "foo"}}</h1>
+{{placeholder-url w=213 h=412}}
+<hr>
+
+{{two-inputs}}
+
+<hr>
+{{x-input label='Email' type='email' value=user.email}}
+{{x-input label='Password' type='password' value=user.password}}
+{{x-input label='Confirm PW'  value=user.passwordConfirmation}}--}}
+<h1>Courses</h1>
+<ul>
+  {{#each model as |course|}}
+    {{course-list-item model=course}}
+  {{/each}}
+</ul>

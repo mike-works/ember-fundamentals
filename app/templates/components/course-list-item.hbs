@@ -1,4 +1,8 @@
 <img src={{unbound model.image-info.square2x.url}} alt="" class="course-image">
-<h2 class="course-title">{{unbound formattedTitle}}</h2>
+{{#link-to 'course' model.title}}
+<h2 class="course-title">
+    {{unbound formattedTitle}}
+</h2>
+{{/link-to}}
 <div class="course-summary">{{unbound model.summary}}</div>
 {{yield}}
