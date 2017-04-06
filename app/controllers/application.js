@@ -1,8 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  user: {
+    email: 'mnorth@linkedin.com',
+    password: '123456Seven',
+    passwordConfirmation: '123un1d12'
+  },
+
   courses: [{
-    title: 'Phoenix Fundamentals',
+    title: 'phoenix fundamentals',
     summary: 'Phoenix makes building robust, high-performance web applications easier and more fun than you ever thought possible.',
     'image-info': {
       square2x: {
@@ -12,7 +18,7 @@ export default Ember.Controller.extend({
       }
     }
   }, {
-    title: 'Ember-Data Basics',
+    title: 'Ember-Data basics',
     summary: 'As the official persistence library of the ember.js framework, ember-data has become more performant, more customizable, and an even more valuable library over time.',
     'image-info': {
       square2x: {
