@@ -18,7 +18,7 @@ if (require.entries['emberli/routes/course'] && require.entries['ember-network/f
       assert.ok($emberBasicsLink.text().trim().indexOf('Ember Basics') >= 0, 'Ember Basics is present in a link on the "/" page');
     });
 
-    click('ul a[href="/course/ember-basics-cf22ed3"]');
+    click('a[href="/course/ember-basics-cf22ed3"]');
 
     andThen(() => {
       assert.ok(find('h1').length > 0, 'At least one H1 on the page');
