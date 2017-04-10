@@ -6,7 +6,7 @@ module('Unit | Helper | make name');
 
 // Replace this with your real tests.
 test('it works', function(assert) {
-  let result = makeName([42]);
+  let result = makeName(['mike', 'north'], {});
   assert.ok(result);
 });
 
