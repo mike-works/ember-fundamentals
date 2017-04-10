@@ -4,8 +4,7 @@
 
 <ul>
   {{#each courses as |course|}}
-  {{course-list-item course=course}}
-    <li>{{course.title}}</li>
+    {{course-list-item model=course}}
   {{/each}}
 </ul>
 
