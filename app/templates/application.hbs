@@ -1,9 +1,25 @@
 <h1>Hello Class</h1>
+{{!--
+{{make-name "Mike" "North" uppercase=true}}--}}
 
-{{make-name "Mike" "North" uppercase=true}}
+<ul>
+  {{#each courses as |course|}}
+  {{course-list-item course=course}}
+    <li>{{course.title}}</li>
+  {{/each}}
+</ul>
 
+
+{{#x-input
+    value="Value"
+    label="My Field Label"}}
+   <span>🔥</span>
+   {{!--{{x-input value="wuuuuuuut?" label="Stop the complex examples "}}--}}
+{{/x-input}}
+{{!--
 {{placeholder-url w=502 h=301}}
-<img src="{{placeholder-url w=512 h=305}}" alt="">
+<img src="{{placeholder-url w=512 h=305}}" alt="">--}}
+
 
 {{!--<p>
   <label>Form Label</label>
