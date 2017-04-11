@@ -1,2 +1,10 @@
 {{link-to "< Back" "index"}}
 <h1 class='course-title'>{{model.title}}</h1>
+
+<ul>
+  {{#each model.stages as |stage| }}
+    <li class='stage'>
+      {{link-to stage.title 'course-stage' model.slug stage.slug}}
+    </li>
+  {{/each}}
+</ul>

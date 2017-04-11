@@ -1,6 +1,6 @@
 // import { moduleForModel, test } from 'ember-qunit';
 
-// moduleForModel('course', 'Unit | Model | course', {
+// moduleForModel('course-agenda-item', 'Unit | Model | course agenda item', {
 //   // Specify the other units that are required for this test.
 //   needs: []
 // });
