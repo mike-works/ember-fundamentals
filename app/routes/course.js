@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(params) {
+  model({ id }) {
     return this.modelFor('application')
-      .filter((x) => x.title === params.id)[0];
+      .filter((x) => x.slug === id)[0];
   }
 });
