@@ -1,9 +1,4 @@
-{{!--<h1>{{dasherize "Hello NYC" lower=true}}</h1>--}}
-
-<pre>
-    {{placeholder-url w=303 h=651}}
-</pre>
-
-<img src={{placeholder-url w=303 h=651}} alt="">
-
+{{#each courses as |course|}}
+    {{course-list-item model=course}}
+{{/each}}
 {{outlet}}
