@@ -6,6 +6,7 @@ export default DS.Model.extend({
   createdAt: DS.attr('date'),
   updatedAt: DS.attr('date'),
   summary: DS.attr('string'),
+  stages: DS.hasMany('course-stage'),
 
   'image-info': DS.attr()
 });

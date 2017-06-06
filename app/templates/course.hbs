@@ -6,3 +6,12 @@
 <p>
     {{model.summary}}
 </p>
+<hr>
+
+<ul>
+    {{#each model.stages as |stage|}}
+        <li class="course-stage-item">
+            {{link-to stage.title 'course-stage' model.slug stage.slug}}
+        </li>
+    {{/each}}
+</ul>
