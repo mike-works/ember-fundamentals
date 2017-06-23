@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Hello</h1>
 
-{{outlet}}
+{{#if true}}
+	<h3>it was true</h3>
+{{else}}
+	<h3>not true</h3>
+{{/if}}
+
+{{log  (dasherize mike.fullName)  }}

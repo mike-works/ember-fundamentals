@@ -31,5 +31,9 @@ export default Ember.Controller.extend({
         height: 500
       }
     }
-  }]
+  }],
+
+  mike: {
+    fullName: 'Mike North'
+  }
 });
