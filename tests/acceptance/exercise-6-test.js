@@ -1,7 +1,7 @@
 import { test } from 'qunit';
 import moduleForAcceptance from 'emberli/tests/helpers/module-for-acceptance';
 
-if (require.entries['emberli/routes/course'] && !require.entries['ember-network/fetch']) {
+if (require.entries['emberli/routes/course'] && !require.entries['fetch']) {
   moduleForAcceptance('Exercise 6 | Basic Routing Structure');
 
   test('visiting /', function(assert) {
