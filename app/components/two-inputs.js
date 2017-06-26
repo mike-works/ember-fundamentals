@@ -1,16 +1,9 @@
 import Ember from 'ember';
+import upper from '../utils/to-upper';
 
-const { Component, computed } = Ember;
+const { Component } = Ember;
 
 export default Component.extend({
   str: '',
-  _upperValue: computed('str', {
-    get() {
-      return this.get('str').toUpperCase();
-    },
-    set: function(_, upper) {
-      this.set('str', upper.toLowerCase());
-      return upper.toUpperCase();
-    }
-  })
+  _upperValue: upper('str')
 });
