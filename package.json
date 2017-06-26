@@ -41,5 +41,8 @@
   "engines": {
     "node": ">= 4"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "ember-network": "^0.3.1"
+  }
 }
