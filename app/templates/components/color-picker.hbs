@@ -1,0 +1,37 @@
+<p>
+  Red:
+  <input
+    type='number'
+    value={{r}}
+    onInput={{action (mut r)
+      value='target.value'}}/>
+</p>
+
+<p>
+  Green:
+  <input
+    type='number'
+    value={{g}}
+    onInput={{action (mut g)
+      value='target.value'}}/>
+</p>
+
+<p>
+  Blue:
+  <input
+    type='number'
+    value={{b}}
+    onInput={{action (mut b)
+      value='target.value'}}/>
+</p>
+rgb ({{r}}, {{g}}, {{b}})
+
+<p>
+  <div style="width: 100px; height:100px; background: #{{_hex}}">
+  
+  </div>
+</p>
+
+{{input value=_hex}}
+
+{{yield}}

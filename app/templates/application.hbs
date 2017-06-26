@@ -1,10 +1,16 @@
+ <!-- r is mutated -->
+{{color-picker
+	}}
+
 
 <ul>
 	{{#each courses as |course|}}
-		<li>{{course.title}}</li>
+		{{course-list-item
+			model=course}}
 	{{/each}}
 </ul>
 
+{{!--
 {{#social-info
 	 twitter='MichaelLNorth'
 	linkedIn='northm' as |x|}}
@@ -16,4 +22,4 @@
 	{{placeholder-url w=413 h=491}}
 </pre>
 
-<img src={{placeholder-url w=413 h=491}} alt="">
+<img src={{placeholder-url w=413 h=491}} alt="">--}}

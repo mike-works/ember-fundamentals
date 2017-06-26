@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  rValue: 50,
   courses: [{
     title: 'Phoenix Fundamentals',
     summary: 'Phoenix makes building robust, high-performance web applications easier and more fun than you ever thought possible.',
