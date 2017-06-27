@@ -1,5 +1,17 @@
 {{!--<h1>{{dasherize "Hello World!"}}</h1>--}}
 
+{{#social-info
+        name='Mike'
+    linkedin='https://linkedin.com/in/northm'
+    as |socialApi isOn|}}
+    {{!--{{component 'social-info-desktop' api=socialApi}}--}}
+    {{!-- the callback --}}
+    <h3 style='color:red'>The toggle is {{isOn}}</h3>
+    <button
+        onclick={{socialApi.doSomething}}>Click me</button>
+{{/social-info}}
+
+
 <pre>{{placeholder-url w=184 h=814}}</pre>
 <img src={{placeholder-url w=184 h=814}} >
 
