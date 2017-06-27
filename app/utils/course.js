@@ -1,3 +1,4 @@
+//@ts-check
 import Ember from 'ember';
 
 const Course = Ember.Object.extend({

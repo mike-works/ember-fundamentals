@@ -76,6 +76,21 @@
   dependencies:
     "@glimmer/util" "^0.22.3"
 
+"@types/ember@^2.7.42":
+  version "2.7.42"
+  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-2.7.42.tgz#27e32b485ed44bfbe172407534daf4f87bc8e1c2"
+  dependencies:
+    "@types/handlebars" "*"
+    "@types/jquery" "*"
+
+"@types/handlebars@*":
+  version "4.0.33"
+  resolved "https://registry.yarnpkg.com/@types/handlebars/-/handlebars-4.0.33.tgz#ee45696b067e4bdf15c3956710a4c36c17d8f8f0"
+
+"@types/jquery@*":
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.2.5.tgz#c082efaab6a791b98131c011343b1d92a56b6019"
+
 abbrev@1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.0.tgz#d0554c2256636e2f56e7c2e5ad183f859428d81f"
