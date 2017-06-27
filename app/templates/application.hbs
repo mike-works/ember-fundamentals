@@ -1,5 +1,12 @@
 {{!--<h1>{{dasherize "Hello World!"}}</h1>--}}
 
+{{#each courses as |thisCourse|}}
+    {{course-list-item
+        model=thisCourse}}
+{{/each}}
+
+<hr>
+
 {{#social-info
         name='Mike'
     linkedin='https://linkedin.com/in/northm'
