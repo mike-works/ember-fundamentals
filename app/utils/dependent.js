@@ -1,3 +1,4 @@
+import Ember from 'ember';
 /**
  * A Derived state
  * B Evaluate lazily
@@ -13,7 +14,7 @@ Ember.Object.extend({
 })
 
 /** Only A & B */
-let MyType = Ember.Object.extend({
+const MyType = Ember.Object.extend({
     _fullNameValue: null,
     get fullName() {
         if (this._fullNameValue === null) {
@@ -22,5 +23,5 @@ let MyType = Ember.Object.extend({
         return this._fullNameValue;
     }
 });
-let x = MyType.create({});
-console.log(x.fullName);
+let x = MyType.create();
+Ember.Logger.log(x.fullName);
