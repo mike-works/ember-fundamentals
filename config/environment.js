@@ -16,7 +16,10 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+    API: {
+      host: 'https://api.mike.works',
+      namespace: 'api/v1'
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -24,6 +27,10 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    /**
+     * EMBER_ENV=staging ember build
+     */
+    // ENV.API.host = 'http://localhost:4000';
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
