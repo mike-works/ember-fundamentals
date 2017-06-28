@@ -1,11 +1,14 @@
 {{!--<h1>{{dasherize "Hello World!"}}</h1>--}}
+<h4>Courses App</h4>
+{{outlet}}
+
+{{!--
+
+{{two-inputs str='LinkedIn Ember.js'}}
+
+<hr>
 
 {{color-picker}}
-
-{{#each courses as |thisCourse|}}
-    {{course-list-item
-        model=thisCourse}}
-{{/each}}
 
 <hr>
 
@@ -13,8 +16,6 @@
         name='Mike'
     linkedin='https://linkedin.com/in/northm'
     as |socialApi isOn|}}
-    {{!--{{component 'social-info-desktop' api=socialApi}}--}}
-    {{!-- the callback --}}
     <h3 style='color:red'>The toggle is {{isOn}}</h3>
     <button
         onclick={{socialApi.doSomething}}>Click me</button>
@@ -28,6 +29,4 @@
     <li>1a. <code>yarn add -D @types/ember</code></li>
     <li>1b. <code>npm install --save-dev @types/ember</code></li>
     <li>2. <code>//@ts-check at top of js files</code></li>
-</ul>
-
-{{outlet}}
+</ul>--}}

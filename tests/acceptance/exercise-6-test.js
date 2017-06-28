@@ -23,7 +23,7 @@ if (require.entries['emberli/routes/course'] && !require.entries['ember-network/
     andThen(() => {
       assert.ok(find('h1').length > 0, 'At least one H1 on the page');
       assert.ok(find('h1.course-title').length > 0, 'H1 has a class .course-title');
-      assert.equal(find('h1.course-title').text(), 'Ember Basics', 'Course title is rendered inside the h1.course-title');
+      assert.equal(find('h1.course-title').text().trim(), 'Ember Basics', 'Course title is rendered inside the h1.course-title');
     });
   });
 }

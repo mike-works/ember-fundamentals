@@ -1,0 +1,12 @@
+<input class='lowercase-field'
+    value={{str}}
+    onInput={{action (mut str)
+                value='target.value'}}
+    type="text">
+<input class='uppercase-field'
+    value={{_upper}}
+    onInput={{action (mut _upper)
+                value='target.value'}}
+    type="text">
+{{_upper}}
+{{yield}}
