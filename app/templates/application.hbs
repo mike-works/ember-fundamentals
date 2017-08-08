@@ -1,6 +1,18 @@
-<pre>
-  {{placeholder-url w=121 h=314}}
-</pre>
-<img src={{placeholder-url w=121 h=314}} alt="">
+{{!-- {{social-info
+    twitter='MichaelLNorth'}}
+
+{{#social-info
+    twitter='StefanPenner'}}
+    <i class='fa-user'></i>
+    <p>
+        Stef is on the presentation infrastructure team.
+    </p>
+{{/social-info}} --}}
+
+{{x-textarea}}
+
+{{#each courses as |course|}}
+    {{course-list-item model=course}}
+{{/each}}
 
 {{outlet}}

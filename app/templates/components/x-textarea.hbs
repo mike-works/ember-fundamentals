@@ -1,0 +1,13 @@
+<textarea onInput={{action (mut value) value='target.value'}}>
+  {{value}}
+</textarea>
+{{!-- {{value}} --}}
+<span>
+  {{value.length}}/{{limit}}
+</span>
+{{#if overCount}}
+<span style="color: red">
+  TOO MUCH TEXT. DELETE YOUR ACCOUNT
+</span>
+{{/if}}
+{{yield}}

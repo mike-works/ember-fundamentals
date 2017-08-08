@@ -1,0 +1,10 @@
+<h1>Social Info</h1>
+
+{{#if isOpen}}
+<a href="https://twitter.com/{{twitter}}">@{{twitter}}</a>
+{{else}}
+<img src="{{placeholder-url w=321 h=914}}" alt="">
+<button onClick={{action 'openInfo'}}>
+  Click to open
+</button>
+{{/if}}
