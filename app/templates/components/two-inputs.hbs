@@ -1,0 +1,14 @@
+
+<input
+  type="text"
+  class='lowercase-field'
+  value={{str}}
+  onInput={{action (mut str) value='target.value'}}>
+
+<input type="text"
+  class='uppercase-field'
+  value={{_upperStr}}
+  onInput={{action (mut _upperStr) value='target.value'}}>
+
+<button
+  onClick={{action (mut str) '000000'}}>Set to zeros</button>
