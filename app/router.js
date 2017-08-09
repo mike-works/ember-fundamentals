@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  // implied index
   this.route('course', {path: 'course/:name'});
 });
 
