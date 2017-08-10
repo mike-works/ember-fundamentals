@@ -8,4 +8,10 @@
   {{model.summary}}
 </p>
 
+<ul class='stages'>
+  {{#each model.stages as |stage|}}
+    <li data-stage={{stage.slug}}>{{stage.title}}</li>
+  {{/each}}
+</ul>
+
 {{outlet}}
