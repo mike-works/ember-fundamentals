@@ -33,19 +33,9 @@ import fetch from 'fetch';
 //     }
 //   }];
 
-const COURSES_URL = 'https://api.mike.works/api/v1/courses';
+// const COURSES_URL = 'https://api.mike.works/api/v1/courses';
 
 export default Ember.Route.extend({
-  model(){
-    return fetch(COURSES_URL)
-      .then((response) => response.json())
-      .then((jsonData) => {
-        return jsonData.data.map((courseData) => {
-          return Object.assign(
-            {id: courseData.id},
-            courseData.attributes
-          );
-        });
-      });
-  }
+  // model(){    
+  // }
 });
