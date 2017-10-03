@@ -1,6 +1,13 @@
 
 <h1>I have {{courses.length}} courses</h1>
 
+{{#each courses as |course|}}
+  {{course-list-item
+    model=course}}
+{{/each}}
+
+<hr>
+
 {{x-field v="Mike" label='Full Name'}}
 {{x-field type='email' label='Email'}}
 {{#x-field type='password' label='Password' as |c|}}
