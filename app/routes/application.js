@@ -1,6 +1,7 @@
 import Ember from 'ember';
 import fetch from 'fetch';
 
+
 // const COURSES = [{
 //     title: 'Phoenix Fundamentals',
 //     summary: 'Phoenix makes building robust, high-performance web applications easier and more fun than you ever thought possible.',

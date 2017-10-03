@@ -3,6 +3,13 @@ import Resolver from './resolver';
 import loadInitializers from 'ember-load-initializers';
 import config from './config/environment';
 
+define('math', [], function() {
+  return {
+    default: Math,
+    PI: Math.PI
+  }
+});
+
 let App;
 
 // Ember.MODEL_FACTORY_INJECTIONS = true;
