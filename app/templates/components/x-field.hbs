@@ -1,0 +1,7 @@
+<label for="">{{label}}</label>
+<input
+  type={{type}}
+  value={{v}}
+  onkeyup={{action (mut v) value='target.value'}}>
+Value={{v}}
+{{yield (action (mut v))}}

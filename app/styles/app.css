@@ -7,3 +7,9 @@ body {
   margin-right: 5px;
   margin-bottom: 5px;
 }
+
+.x-field {
+  margin: 20px;
+  padding: 20px;
+  background: #ddd;
+}

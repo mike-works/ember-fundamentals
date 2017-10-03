@@ -1,8 +1,19 @@
-<h1>Hello Ember</h1>
 
-<pre>
+<h1>I have {{courses.length}} courses</h1>
+
+{{x-field v="Mike" label='Full Name'}}
+{{x-field type='email' label='Email'}}
+{{#x-field type='password' label='Password' as |c|}}
+  please enter one symbol, one number, one blah blah
+  <p>
+    Click here --> <button onclick={{action c 'newVal'}}>Click</button>
+  </p>
+{{/x-field}}
+{{x-field type='password' label='Confirm Password'}}
+
+{{!-- <pre>
   {{placeholder-url w=301 h=119}}
 </pre>
-<img src={{placeholder-url w=301 h=119}} alt="">
+<img src={{placeholder-url w=301 h=119}} alt=""> --}}
 
 {{outlet}}
