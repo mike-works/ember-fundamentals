@@ -11,6 +11,10 @@ Router.map(function() {
   this.route('list', function() {
     this.route('details', {path: ':id'});
   });
+
+  this.route('course', {
+    path: 'course/:id'
+  });
 });
 
 export default Router;

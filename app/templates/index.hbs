@@ -1,4 +1,12 @@
-{{link-to "Go to about page" "about"}}
+<ul>
+  {{#each model as |course|}}
+    {{course-list-item
+      model=course}}
+  {{/each}}
+
+</ul>
+
+{{!-- {{link-to "Go to about page" "about"}}
 
 {{two-inputs str='Hello World'}}
 
@@ -25,4 +33,4 @@
 {{!-- <pre>
   {{placeholder-url w=301 h=119}}
 </pre>
-<img src={{placeholder-url w=301 h=119}} alt=""> --}}
+<img src={{placeholder-url w=301 h=119}} alt=""> --}} 
