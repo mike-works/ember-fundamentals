@@ -1,28 +1,5 @@
-{{two-inputs str='Hello World'}}
+<h1>Application</h1>
 
-
-<h1>I have {{courses.length}} courses</h1>
-
-{{#each courses as |course|}}
-  {{course-list-item
-    model=course}}
-{{/each}}
-
-<hr>
-
-{{x-field v="Mike" label='Full Name'}}
-{{x-field type='email' label='Email'}}
-{{#x-field type='password' label='Password' as |c|}}
-  please enter one symbol, one number, one blah blah
-  <p>
-    Click here --> <button onclick={{action c 'newVal'}}>Click</button>
-  </p>
-{{/x-field}}
-{{x-field type='password' label='Confirm Password'}}
-
-{{!-- <pre>
-  {{placeholder-url w=301 h=119}}
-</pre>
-<img src={{placeholder-url w=301 h=119}} alt=""> --}}
-
-{{outlet}}
+<div class="application-children">
+  {{outlet}}
+</div>
