@@ -1,7 +1,8 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import require from 'require';
 
-if (require.entries['emberli/components/course-list-item']) {
+if (require.has('emberli/components/course-list-item')) {
   moduleForComponent('course-list-item', 'Exercise 3 | course-list-item component', {
     integration: true
   });

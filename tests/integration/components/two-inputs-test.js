@@ -1,8 +1,8 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import require from 'require';
 
-
-if (require.entries['emberli/components/two-inputs']) {
+if (require.has('emberli/components/two-inputs')) {
 
 moduleForComponent('two-inputs', 'Integration | Component | two inputs', {
   integration: true
