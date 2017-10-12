@@ -1,6 +1,6 @@
-import Ember from 'ember';
+import Controller from '@ember/controller';
 
-export default Ember.Controller.extend({
+export default Controller.extend({
   courses: [{
     title: 'Phoenix Fundamentals',
     summary: 'Phoenix makes building robust, high-performance web applications easier and more fun than you ever thought possible.',
