@@ -2,10 +2,7 @@ import { test } from 'qunit';
 import moduleForAcceptance from 'emberli/tests/helpers/module-for-acceptance';
 import require from 'require';
 
-const CourseRoute = require.has('emberli/routes/course');
-const emberFetch = require.has('fetch');
-
-if (CourseRoute.default && !emberFetch) {
+if (require.has('emberli/routes/course') && !require.has('fetch')) {
   moduleForAcceptance('Exercise 6 | Basic Routing Structure');
 
   test('visiting /', function(assert) {

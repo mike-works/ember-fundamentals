@@ -2,10 +2,7 @@ import { test } from 'qunit';
 import moduleForAcceptance from 'emberli/tests/helpers/module-for-acceptance';
 import require from 'require';
 
-const CourseRoute = require.has('emberli/routes/course');
-const fetch = require.has('fetch');
-
-if (CourseRoute && fetch) {
+if (require.has('emberli/routes/course') && require.has('fetch')) {
   moduleForAcceptance('Exercise 7 | Async Data');
 
   test('visiting /', function(assert) {
