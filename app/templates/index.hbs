@@ -1,39 +1,9 @@
+<h3>List of Courses</h3>
 
-<h3> index.hbs</h3>
-{{link-to 'About' 'about-us'}}
-
-
-{{two-inputs str="Hello Beijing!"}}
-
-{{!-- 
-There are {{courses.length}} courses
-{{#each courses as |course|}}
-  {{course-list-item
-    model=course}}
-{{/each}} --}}
-
-
-
-{{!-- {{dasherize 'Ember            Fundamentals in Beijing' delimeter='==~=='}} --}}
-{{!-- <pre>{{placeholder-url w=307 h=414}}</pre>
-<img src={{placeholder-url w=307 h=414}} alt="Cat"> --}}
-
-{{!-- {{#form-field
-  label='Name'
-  as |toggle label|}}
-  <label for="">{{label}}</label>
-  <button onClick={{toggle}}>Toggle Me</button>
-{{/form-field}}
-{{#form-field
-  label='Name'
-  as |toggle label|}}
-  <button onClick={{toggle}}>Toggle Me</button>
-  <label for="">{{label}}</label>
-{{/form-field}}
-
-{{form-field
-   type='email'
-  label='Email'}}
-{{form-field
-   type='password'
-  label='Password'}} --}}
+<ul>
+{{#each model as |thisCourse|}}
+  <li>
+    {{thisCourse.title}}
+  </li>
+{{/each}}
+</ul>
