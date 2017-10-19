@@ -3,7 +3,7 @@
 <ul>
 {{#each model as |thisCourse|}}
   <li>
-    {{thisCourse.title}}
+    {{link-to thisCourse.title 'course' thisCourse.title}}
   </li>
 {{/each}}
 </ul>
