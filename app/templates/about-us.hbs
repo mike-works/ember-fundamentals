@@ -1,0 +1,13 @@
+{{link-to '< Home' 'index'}}
+
+<h3>about-us.hbs</h3>
+<h4>Company: {{model.company}}</h4>
+<h4>Location: {{model.location}}</h4>
+<ul>
+  <li>{{link-to 'About-us/index' 'about-us.index'}}</li>
+  <li>{{link-to 'About-us/first' 'about-us.first'}}</li>
+</ul>
+
+
+
+{{outlet}}
