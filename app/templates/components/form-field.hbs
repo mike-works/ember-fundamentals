@@ -1,2 +1,11 @@
-<input type={{type}} disabled={{isDisabled}}>
-{{yield (action 'toggleDisabled') label}}
+<label>{{label}}</label>
+<input
+  type={{type}}
+  value={{v}}
+  onkeyup={{action (mut v) value='target.value'}}
+  disabled={{isDisabled}}>
+<pre>
+  {{v}}
+</pre>
+
+{{yield (action 'toggleDisabled')}}

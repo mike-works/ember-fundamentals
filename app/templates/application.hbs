@@ -1,12 +1,25 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{!-- {{welcome-page}} --}}
-{{!-- Feel free to remove this! --}}
 <h1>Hello Class</h1>
+
+{{form-field
+   type='email'
+   v='nobody@example.com'
+   label='Email'}}
+
+<hr>
+
+There are {{courses.length}} courses
+{{#each courses as |course|}}
+  {{course-list-item
+    model=course}}
+{{/each}}
+
+
+
 {{!-- {{dasherize 'Ember            Fundamentals in Beijing' delimeter='==~=='}} --}}
 {{!-- <pre>{{placeholder-url w=307 h=414}}</pre>
 <img src={{placeholder-url w=307 h=414}} alt="Cat"> --}}
 
-{{#form-field
+{{!-- {{#form-field
   label='Name'
   as |toggle label|}}
   <label for="">{{label}}</label>
@@ -24,6 +37,6 @@
   label='Email'}}
 {{form-field
    type='password'
-  label='Password'}}
+  label='Password'}} --}}
 
 {{outlet}}
