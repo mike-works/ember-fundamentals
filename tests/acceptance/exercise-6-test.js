@@ -10,16 +10,16 @@ if (require.has('emberli/routes/course') && !require.has('fetch')) {
 
     andThen(() => {
       assert.equal(currentURL(), '/');
-      let $phoenixLink = find('ul a[href="/course/Phoenix%20Fundamentals"]');
+      let $phoenixLink = find('ul .course-list-item[data-name="Phoenix Fundamentals"]');
       assert.equal($phoenixLink.length, 1, 'Link with href="/course/Phoenix%20Fundamentals" is present on the page');
       assert.ok($phoenixLink.text().trim().indexOf('Phoenix Fundamentals') >= 0, 'Phoenix Fundamentals is present in a link on the "/" page');
 
-      let $emberBasicsLink = find('ul a[href="/course/Ember%20Basics"]');
+      let $emberBasicsLink = find('ul .course-list-item[data-name="Ember Basics"]');
       assert.equal($emberBasicsLink.length, 1, 'Link with href="/course/Ember%20Basics" is present on the page');
       assert.ok($emberBasicsLink.text().trim().indexOf('Ember Basics') >= 0, 'Ember Basics is present in a link on the "/" page');
     });
 
-    click('ul a[href="/course/Ember%20Basics"]');
+    click('ul .course-list-item[data-name="Ember Basics"] a');
 
     andThen(() => {
       assert.ok(find('h1').length > 0, 'At least one H1 on the page');
