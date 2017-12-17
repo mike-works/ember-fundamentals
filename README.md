@@ -11,7 +11,7 @@
 
 <p align='center'>
   <a href="https://travis-ci.org/mike-north/ember-fundamentals" title="Build Status">
-    <img title="Build Status" src="https://travis-ci.org/mike-north/ember-fundamentals.svg?branch=solution"/>
+    <img title="Build Status" src="https://travis-ci.org/mike-north/ember-fundamentals.svg?branch=master"/>
   </a>
   <a href="https://mike.works/course/ember-basics-cf22ed3" title="Ember Fundamentals">
     <img title="Course Outline" src="https://img.shields.io/badge/mike.works-course%20outline-blue.svg"/>
