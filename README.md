@@ -5,7 +5,7 @@
 </p>
 <p align='center'>
   <a href="https://mike.works/course/ember-basics-cf22ed3" target='_blank'>
-    <img height=150 src='https://files.mike.works/courses/2/course_banner_2_thumb.png' />
+    <img height=150 src='https://user-images.githubusercontent.com/558005/34076832-f366c976-e2b7-11e7-9085-73f3aeab3743.png' />
   </a>
 </p>
 
