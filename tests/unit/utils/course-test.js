@@ -1,9 +1,9 @@
 import { module, test } from 'qunit';
 import require from 'require';
 
-let Course = require.has('emberli/utils/course');
+if (require.has('emberli/utils/course')) {
+  const Course = require('emberli/utils/course').default;
 
-if (Course) {
   module('Exercise 1 | Modeling Data');
 
   test('Correct defaults for data', function(assert) {
