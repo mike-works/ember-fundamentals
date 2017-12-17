@@ -77,7 +77,6 @@ npm install
 ember serve
 ```
 
-
 # License
 While the general license for this project is the BSD 3-clause, the exercises
 themselves are proprietary and are licensed on a per-individual basis, usually
