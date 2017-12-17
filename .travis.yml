@@ -9,18 +9,15 @@ dist: trusty
 addons:
   chrome: stable
 
-cache:
-  yarn: true
-
 env:
   global:
     # See https://git.io/vdao3 for details.
     - JOBS=1
-
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=$HOME/.yarn/bin:$PATH
-
+  - npm install -g npm@5 # skip this if you are using node 9
+  - npm install -g greenkeeper-lockfile@1
+before_script: greenkeeper-lockfile-update
+after_script: greenkeeper-lockfile-upload
 install:
   - yarn install --non-interactive
 
