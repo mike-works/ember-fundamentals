@@ -2,14 +2,14 @@
   "name": "emberli",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for emberli goes here",
-  "license": "MIT",
-  "author": "",
+  "description": "Mike Works, Inc. Ember Fundamentals Workshop",
+  "license": "BSD-3-clause",
+  "author": "Mike North <michael.l.north@gmail.com> (https://mike.works)",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/mike-north/ember-fundamentals",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
