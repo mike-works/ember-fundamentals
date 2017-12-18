@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitThis": true,
+    "noEmitOnError": false,
+    "noEmit": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "module": "es6",
+    "paths": {
+      "emberli/tests/*": ["tests/*"],
+      "emberli/*": [
+        "app/*"
+      ]
+    }
+  },
+  "exclude": [
+    "tmp",
+    "dist",
+    "node_modules",
+    "bower_components"
+  ]
+}
