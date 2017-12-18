@@ -18,7 +18,9 @@
   "devDependencies": {
     "@types/ember": "^2.8.3",
     "@types/ember-data": "^2.14.2",
+    "@types/ember-qunit": "^2.2.0",
     "@types/ember-testing-helpers": "^0.0.3",
+    "@types/qunit": "^2.0.31",
     "@types/rsvp": "^4.0.0",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",

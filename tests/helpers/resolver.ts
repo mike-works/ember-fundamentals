@@ -1,5 +1,5 @@
-import Resolver from '../../resolver';
-import config from '../../config/environment';
+import Resolver from 'emberli/resolver';
+import config from 'emberli/config/environment';
 
 const resolver = Resolver.create();
 

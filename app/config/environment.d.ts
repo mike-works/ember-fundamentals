@@ -8,6 +8,9 @@ export default config;
  * since different ember addons can materialize new entries.
  */
 declare namespace config {
+  var APP: {
+    [k: string]: string
+  }
   var environment: any;
   var modulePrefix: string;
   var podModulePrefix: string;
