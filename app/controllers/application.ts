@@ -1,7 +1,19 @@
 import Controller from '@ember/controller';
 
-export default Controller.extend({
-  courses: [
+interface ICourse {
+  title: string;
+  summary: string;
+  'image-info': {
+    square2x: {
+      width: number;
+      url: string;
+      height: number;
+    };
+  };
+}
+
+export default class ApplicationController extends Controller {
+  public courses: ICourse[] = [
     {
       title: 'Phoenix Fundamentals',
       summary:
@@ -41,5 +53,5 @@ export default Controller.extend({
         }
       }
     }
-  ]
-});
+  ];
+}
