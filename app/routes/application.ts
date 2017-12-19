@@ -45,17 +45,18 @@ const COURSES: ICourse[] = [
 ];
 
 export default class ApplicationRoute extends Route {
-  async model() {
+  model() {
+    return this.store.findAll('course');
+    // let jsonData = await fetch(
+    //   'https://api.mike.works/api/v1/courses'
+    // ).then(response => response.json());
     
-    let jsonData = await fetch(
-      'https://api.mike.works/api/v1/courses'
-    ).then(response => response.json());
-    
-    return jsonData.data.map(item => {
-      return Object.assign(
-        { id: item.id },
-        item.attributes
-      );
-    });
+    // let result = jsonData.data.map(item => {
+    //   return Object.assign(
+    //     { id: item.id },
+    //     item.attributes
+    //   );
+    // });
+    // return result;
   }
 }

@@ -48,6 +48,7 @@ import { computed } from 'ember-decorators/object';
 
 export default class CourseLI extends Component {
   classNames = ['course-list-item'];
+  tagName = 'li';
   attributeBindings = ['model.title:data-name'];
 
   courseImage = Ember.computed('model.image-info.square2x.url',  function () {
