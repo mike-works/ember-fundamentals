@@ -16,7 +16,7 @@
   <a href="https://mike.works/course/ember-basics-cf22ed3" title="Ember Fundamentals">
     <img title="Course Outline" src="https://img.shields.io/badge/mike.works-course%20outline-blue.svg"/>
   </a>
-  <a href="https://docs.mike.works/ember-fundamentals" title="Slides">
+  <a href="https://docs.mike.works/ember-fundamentals-slides" title="Slides">
     <img title="Slides" src="https://img.shields.io/badge/mike.works-slides-blue.svg"/>
   </a>
   <a title="Greenkeeper badge" href="https://greenkeeper.io/">
