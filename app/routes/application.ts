@@ -1,4 +1,5 @@
 import Route from '@ember/routing/route';
+// import fetch from 'fetch';
 import { ICourse } from 'emberli/controllers/application';
 
 const COURSES: ICourse[] = [
@@ -44,7 +45,17 @@ const COURSES: ICourse[] = [
 ];
 
 export default class ApplicationRoute extends Route {
-  model() {
-    return COURSES;
+  async model() {
+    
+    let jsonData = await fetch(
+      'https://api.mike.works/api/v1/courses'
+    ).then(response => response.json());
+    
+    return jsonData.data.map(item => {
+      return Object.assign(
+        { id: item.id },
+        item.attributes
+      );
+    });
   }
 }
