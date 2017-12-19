@@ -1,0 +1,10 @@
+{{yield}}
+
+{{#link-to 'course' model.title}}
+  <img
+    class='course-image'
+    src={{unbound courseImage}} >
+
+  <h1 class='course-title'>{{unbound model.title}}</h1>
+{{/link-to}}
+<p class="course-summary">{{unbound model.summary}}</p>

@@ -1,0 +1,12 @@
+<input
+  type={{type}}
+  value={{_value}}
+  oninput={{action (mut _value) value='target.value'}}
+   />
+<button onClick={{action (mut _value) 'cleared!'}}>
+  Clear
+</button>
+
+<label>{{label}}</label>
+Value is {{_value}}
+{{yield (action clearContents)}}

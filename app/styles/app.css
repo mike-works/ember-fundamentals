@@ -2,7 +2,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .course-list-item .course-image {
-  max-height: 70px;
+  max-height: 100px;
   float: left;
   margin-right: 5px;
   margin-bottom: 5px;
