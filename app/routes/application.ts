@@ -46,7 +46,7 @@ const COURSES: ICourse[] = [
 
 export default class ApplicationRoute extends Route {
   model() {
-    return this.store.findAll('course');
+    // return this.store.findAll('course');
     // let jsonData = await fetch(
     //   'https://api.mike.works/api/v1/courses'
     // ).then(response => response.json());
