@@ -9,7 +9,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/mike-north/ember-fundamentals",
+  "repository": "https://github.com/mike-works/ember-fundamentals",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
