@@ -1,0 +1,11 @@
+{{link-to "Courses" "index"}}
+<p>course.hbs</p>
+
+<img style="max-height: 300px; max-width: 100%" src={{model.image-info.square2x.url}} alt={{model.title}} />
+<h1 class='course-title'>{{model.title}}</h1>
+<p>{{model.summary}}</p>
+
+<h3>Stages</h3>
+{{#each model.stages as |stage|}}
+  <p>{{link-to stage.title 'course.stage' model.slug stage.slug}}</p>
+{{/each}}

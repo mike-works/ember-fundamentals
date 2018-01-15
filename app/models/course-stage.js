@@ -1,9 +1,8 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
+  course: DS.belongsTo('course'),
   title: DS.attr('string'),
-  summary: DS.attr('string'),
   slug: DS.attr('string'),
-  'image-info': DS.attr(),
-  stages: DS.hasMany('course-stage')
+  description: DS.attr('string')
 });

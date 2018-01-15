@@ -8,9 +8,13 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   // this.route('index', {path: ''}); // IMPLIED
-  this.route('course', {
-    path: 'course/:id'
+  this.route('course', { path: 'course/:id' }, function() {
+    // this.route('index', {path: ''}); // IMPLIED
+    this.route('stage', {
+      path: '/stage/:stageId'
+    });
   });
+
 });
 
 export default Router;
