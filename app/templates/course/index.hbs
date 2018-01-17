@@ -7,5 +7,6 @@
 
 <h3>Stages</h3>
 {{#each model.stages as |stage|}}
+    {{!-- <p>Course={{model.slug}}, stage={{stage.slug}}</p> --}}
   <p>{{link-to stage.title 'course.stage' model.slug stage.slug}}</p>
 {{/each}}

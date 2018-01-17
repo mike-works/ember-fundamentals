@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-import RSVP from 'rsvp';
+// import RSVP from 'rsvp';
 
 export default Route.extend({
   async model({stageId}) {
