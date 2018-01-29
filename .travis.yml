@@ -1,7 +1,7 @@
 ---
 language: node_js
 node_js:
-  - "stable"
+  - "6"
 
 sudo: false
 dist: trusty
@@ -9,15 +9,25 @@ dist: trusty
 addons:
   chrome: stable
 
+cache:
+  directories:
+    - $HOME/.npm
+
 env:
   global:
     # See https://git.io/vdao3 for details.
     - JOBS=1
-before_install: npm install -g greenkeeper-lockfile@1
+
+before_install:
+  - npm config set spin false
+  - npm install -g greenkeeper-lockfile@1
+
 before_script: greenkeeper-lockfile-update
 after_script: greenkeeper-lockfile-upload
+
 install:
   - yarn install --non-interactive
 
 script:
-  - yarn test
+  - npm run lint:js
+  - npm test
