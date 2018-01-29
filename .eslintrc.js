@@ -9,5 +9,8 @@ module.exports = {
     browser: true
   },
   rules: {
+    "no-console": "off",
+    "no-debugger": "off",
+    "quotes": "off"
   }
 };
