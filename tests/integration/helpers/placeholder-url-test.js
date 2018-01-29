@@ -6,7 +6,7 @@ moduleForComponent('placeholder-url', 'helper:placeholder-url', {
   integration: true
 });
 
-if (require.has('emberli/helpers/placeholder-url')) {
+if (require.has('ember-fundamentals/helpers/placeholder-url')) {
   // Replace this with your real tests.
   test('conventional usage', function(assert) {
     this.render(hbs`{{placeholder-url w=300 h=302}}`);

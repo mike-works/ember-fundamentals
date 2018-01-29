@@ -1,9 +1,9 @@
 import { test } from 'qunit';
-import moduleForAcceptance from 'emberli/tests/helpers/module-for-acceptance';
+import moduleForAcceptance from 'ember-fundamentals/tests/helpers/module-for-acceptance';
 import require from 'require';
 
 if (
-  require.has('emberli/routes/course') &&
+  require.has('ember-fundamentals/routes/course') &&
   !require.has('ember-network/fetch') &&
   !require.has('fetch')
 ) {
