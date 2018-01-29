@@ -42,6 +42,7 @@ const ALL_COURSES = [
 export default class extends Controller {
   constructor() {
     super();
+    this.set('x', 5);
     this.courses = ALL_COURSES;
   }
 }

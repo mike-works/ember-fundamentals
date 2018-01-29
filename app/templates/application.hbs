@@ -1,5 +1,22 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Hello Ember</h1>
 
+{{!-- {{placeholder-url w=300 h=302}} --}}
+{{!-- <img src={{placeholder-url w=300 h=302}} alt="" /> --}}
+
+<form action="">
+  {{x-input value=x label="Name"}}
+  {{x-input     type="email" value="mnorth@linkedin.com" label="Email"}}
+  {{#x-input     type="number" label="Age" as |api|}}
+    <h6>This is required. You typed {{v}}</h6>
+    <button onclick={{api.clearAction}}>Click here to take a break</button>
+  {{/x-input}}
+</form>
+x = {{x}}
 {{outlet}}
+
+<ul>
+  {{#each courses as |course|}}
+    <li>{{course.title}}</li>
+    {{!-- {{course-list-item model=course }} --}}
+  {{/each}}
+</ul>
