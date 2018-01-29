@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - "6"
 
-sudo: false
+sudo: required
 dist: trusty
 
 addons:
@@ -22,7 +22,11 @@ before_install:
   - npm config set spin false
   - npm install -g greenkeeper-lockfile@1
 
-before_script: greenkeeper-lockfile-update
+before_script: 
+  - sudo chmod 4755 /opt/google/chrome/chrome-sandbox
+  - sudo chown root /opt/google/chrome/chrome-sandbox
+  - greenkeeper-lockfile-update
+
 after_script: greenkeeper-lockfile-upload
 
 install:
