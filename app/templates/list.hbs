@@ -1,0 +1,12 @@
+<h1>My List</h1>
+<ul>
+  {{#each model as |x|}}
+    <!-- /item/1   text: name -->
+    <li>
+      {{link-to x.name 'list.item' x.id}}
+    </li>
+  {{/each}}
+</ul>
+
+
+{{outlet}}

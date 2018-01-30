@@ -1,9 +1,9 @@
-<h1>Hello Ember</h1>
+<h1>application.hbs</h1>
 
 {{!-- {{placeholder-url w=300 h=302}} --}}
 {{!-- <img src={{placeholder-url w=300 h=302}} alt="" /> --}}
 
-<form action="">
+{{!-- <form action="">
   {{x-input value=x label="Name"}}
   {{x-input     type="email" value="mnorth@linkedin.com" label="Email"}}
   {{#x-input     type="number" label="Age" as |api|}}
@@ -11,8 +11,8 @@
     <button onclick={{api.clearAction}}>Click here to take a break</button>
   {{/x-input}}
 </form>
-x = {{x}}
-{{outlet}}
+x = {{x}} --}}
+
 
 <ul>
   {{#each courses as |course|}}
@@ -20,3 +20,5 @@ x = {{x}}
     {{course-list-item model=course }}
   {{/each}}
 </ul>
+
+{{outlet}}
