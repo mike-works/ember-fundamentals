@@ -1,23 +1,30 @@
-import EmberObject
-  from '@ember/object';
+import EmberObject from '@ember/object';
 
 // ES6
-class Course
-  extends EmberObject {
-    constructor() {
-      super();
-      // if (!this.title) { this.title = 'No Title'; }
-      if (!this.description) { this.description = ''; }
-      if (!this.tags) { this.tags = []; }
-      if (!this.languages) { this.languages = []; }
+class Course extends EmberObject {
+  constructor() {
+    super();
+    // if (!this.title) { this.title = 'No Title'; }
+    if (!this.description) {
+      this.description = '';
     }
-    static languageName(abbrev) {
-      switch (abbrev) {
-        case 'js': return 'JavaScript';
-        default: return 'Unknown';
-      }
+    if (!this.tags) {
+      this.tags = [];
+    }
+    if (!this.languages) {
+      this.languages = [];
     }
   }
+  static languageName(abbrev) {
+    switch (abbrev) {
+      case 'js':
+        return 'JavaScript';
+      default:
+        return 'Unknown';
+    }
+  }
+}
+
 Course.prototype.title = 'No Title';
 
 // ES5
@@ -40,6 +47,5 @@ Course.prototype.title = 'No Title';
 //     }
 //   }
 // });
-
 
 export default Course;

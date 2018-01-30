@@ -1,7 +1,6 @@
 <label>{{label}}</label>
 
-<input type={{type}} value={{value}}
-  oninput={{action (mut value) 'foo' }} />
+<input type={{type}} value={{value}} oninput={{action (mut value) value='target.value' }} />
 
 <p class="small">
   {{yield (hash clearAction=(action 'clear') ) }}

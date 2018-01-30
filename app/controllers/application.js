@@ -1,48 +1,26 @@
+import { computed } from '@ember/object';
 import Controller from '@ember/controller';
 
-const ALL_COURSES = [
-  {
-    title: 'Phoenix Fundamentals',
-    summary:
-      'Phoenix makes building robust, high-performance web applications easier and more fun than you ever thought possible.',
-    'image-info': {
-      square2x: {
-        width: 500,
-        url: 'https://files.mike.works/courses/7/course_banner_7_square2x.png',
-        height: 500
-      }
-    }
-  },
-  {
-    title: 'Ember-Data Basics',
-    summary:
-      'As the official persistence library of the ember.js framework, ember-data has become more performant, more customizable, and an even more valuable library over time.',
-    'image-info': {
-      square2x: {
-        width: 500,
-        url: 'https://files.mike.works/courses/3/course_banner_3_square2x.png',
-        height: 500
-      }
-    }
-  },
-  {
-    title: 'Ember Basics',
-    summary:
-      "Ember.js boasts unparalleled developer productivity, an unwavering focus on making web development fun and easy, and some of the best build tools in the world. We'll cover all of the important fundamentals you need to know, in order to successfully get up and running.",
-    'image-info': {
-      square2x: {
-        width: 500,
-        url: 'https://files.mike.works/courses/2/course_banner_2_square2x.png',
-        height: 500
-      }
-    }
-  }
-];
-
-export default class extends Controller {
+class ApplicationController extends Controller {
   constructor() {
     super();
     this.set('x', 5);
-    this.courses = ALL_COURSES;
+    // this.courses = ALL_COURSES;
   }
 }
+
+let c = 0;
+ApplicationController.prototype.Xsq = computed('x', {
+  get() {
+    console.log('calculated ', ++c, 'times');
+    let x = this.get('x');
+    return x * x;
+  },
+  set(_, newVal) {
+    let x = Math.sqrt(parseFloat(newVal));
+    this.set('x', x);
+    return newVal;
+  }
+});
+
+export default ApplicationController;

@@ -1,2 +1,11 @@
 <h6>index.hbs</h6>
+
+<ul>
+{{#each model as |course|}}
+  <li>
+    {{link-to course.title "course" course.title}}
+  </li>
+{{/each}}
+</ul>
+
 {{outlet}}
