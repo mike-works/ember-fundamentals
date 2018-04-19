@@ -10,6 +10,9 @@
 </p>
 
 <p align='center'>
+  <a href="https://greenkeeper.io/" title="Dependencies">
+    <img src="https://badges.greenkeeper.io/mike-works/ember-fundamentals.svg"/>
+  </a>
   <a href="https://travis-ci.org/mike-works/ember-fundamentals" title="Build Status">
     <img title="Build Status" src="https://travis-ci.org/mike-works/ember-fundamentals.svg?branch=master"/>
   </a>
@@ -19,13 +22,14 @@
   <a href="https://docs.mike.works/ember-fundamentals-slides" title="Slides">
     <img title="Slides" src="https://img.shields.io/badge/mike.works-slides-blue.svg"/>
   </a>
-  <a title="Greenkeeper badge" href="https://greenkeeper.io/">
-    <img src="https://badges.greenkeeper.io/mike-works/ember-fundamentals.svg"/>
-  </a>
 </p>
 <p align='center'>
 This is the  project used for the <a title="Mike.Works" href="https://mike.works">Mike.Works</a> <a title="Ember Fundamentals" href="https://mike.works/course/ember-basics-cf22ed3">Ember Fundamentals</a> course.
 </p>
+
+# Course outline and slides
+ * [View course outline here](https://mike.works/course/ember-basics-cf22ed3)
+ * [View slides here](https://docs.mike.works/ember-fundamentals-slides)
 
 ## Prerequisites
 
