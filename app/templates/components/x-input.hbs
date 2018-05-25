@@ -1,0 +1,21 @@
+<label>{{label}}</label>
+<input
+  type={{inputType}}
+  value={{value}}
+  onInput={{action
+    (mut value) value='target.value'
+  }}
+  onkeyup={{action 'updateCharCount'}}
+   />
+<span>{{value}}</span>
+{{#if hasBlock}}
+  {{yield count (action 'clear')}}
+{{else}}
+  <b>Good Luck!</b>
+{{/if}}
+
+<p>Count: {{count}}</p>
+{{#if errorMessage}}
+  <p>ERROR: {{errorMessage}}</p>
+{{/if}}
+{{!-- {{yield}} --}}

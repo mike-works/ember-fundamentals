@@ -1,14 +1,47 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-<h1>Hello</h1>
+<ul>
+{{#each courses as |course|}}
+  {{!-- {{course-list-item model=course}} --}}
+  <li>{{course.title}}</li>
+{{/each}}
+</ul>
+{{!-- <h1>Hello</h1>
 
 <span style="width: 30px; height: 30px; background: #{{color 255 255 0 caps=true}}">
   here
 </span>
-<hr>
+<hr> --}}
+
+
+{{!-- {{#text-form as |data save|}}
+  {{text-field label='first name' value=data.firstName}}
+  {{text-field label='last name' value=data.lastName}}
+  {{text-field label='company' value=data.company}}
+  {{#each data.errors as |err|}}
+    <span style='color: red'>{{err}}</span>
+  {{/each}}
+  <button onClick={{save}}>Save</button>
+{{/text-form}} --}}
+{{!-- 
+
+{{x-input
+  label='Full Name'
+  errorMessage='too short!'}}
+{{#x-input
+  label='Password'
+  inputType='number' as |ct clear|}}
+  <b>
+    Requirements: At least 8 characters. You have {{ct}}
+  </b>
+  <img src={{placeholder-url w=24 h=29}} alt="" srcset="">
+  <button onClick={{clear}}>Clear</button>
+{{/x-input}} --}}
+
+{{!-- <hr>
 <code>{{placeholder-url
           w=309
           h=401
       }}</code>
-<img src={{placeholder-url w=309 h=401}} alt="" srcset="">
+<img src={{placeholder-url w=309 h=401}} alt="" srcset=""> --}}
 
 {{outlet}}
