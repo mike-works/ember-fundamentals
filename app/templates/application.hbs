@@ -1,10 +1,14 @@
 {{!-- The following component displays Ember's default welcome message. --}}
 <h1>Hello</h1>
 
-<p>Before</p>
-<span style="width: 30px; height: 30px; background: #{{color 255 255 0}}">
+<span style="width: 30px; height: 30px; background: #{{color 255 255 0 caps=true}}">
   here
 </span>
-<p>after</p>
+<hr>
+<code>{{placeholder-url
+          w=309
+          h=401
+      }}</code>
+<img src={{placeholder-url w=309 h=401}} alt="" srcset="">
 
 {{outlet}}
