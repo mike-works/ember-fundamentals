@@ -6,6 +6,15 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {});
+Router.map(function() {
+  // implied INDEX
+  // this.route('posts', { path: '/posts'});
+  // this.route('posts.comments', { path: '/posts/comments' });
+  // this.route('posts.author', { path: '/posts/author' });
+  this.route('posts', function() {
+    this.route('comments');
+    this.route('author');
+  })
+});
 
 export default Router;
