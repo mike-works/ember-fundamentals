@@ -1,13 +1,15 @@
 import Route from '@ember/routing/route';
-import { ALL_COURSES } from './index';
+import fetch from 'fetch';
+// import { ALL_COURSES } from './index';
 
 export default class extends Route {
-  model(params) {
+  async model(params) {
     let { id } = params;
-    return ALL_COURSES.then(courses => {
-      let items = courses.filter(c => c.title === id);
-      return items.length > 0 ? items[0] : null;
-    })
-
+    let response = await fetch(`https://api.mike.works/api/v1/courses/${id}`);
+    let responseData = await response.json();
+    return Object.assign({ id: responseData.data.id }, responseData.data.attributes);
+    // return responseData.data.map(item => {
+    //   return Object.assign({ id: item.id }, item.attributes);
+    // });
   }
 }

@@ -1,6 +1,6 @@
 <h4>List of courses</h4>
 <ul>
    {{#each model as |course|}}
-      <li>{{link-to course.title "course" course.title}}</li>
+      <li>{{link-to course.title "course" course.slug}}</li>
    {{/each}}
 </ul>
