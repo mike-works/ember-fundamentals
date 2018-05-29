@@ -15,6 +15,10 @@ Router.map(function() {
     this.route('comments');
     this.route('author');
   })
+
+  this.route('course', {
+    path: 'course/:id'
+  });
 });
 
 export default Router;
