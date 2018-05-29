@@ -10,5 +10,10 @@ export default Component.extend({
       this.set('str', upper.toLowerCase());
       return upper.toUpperCase();
     }
-  })
+  }),
+  actions: {
+    updateLower(newStr) {
+      this.set('str', newStr.toLowerCase());
+    }
+  }
 });
