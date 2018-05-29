@@ -1,0 +1,19 @@
+<ul>
+  {{#each items as |item|}}
+    <li>{{item.name}} {{item.qty}} @ 
+      <input
+         onkeyup={{action 'updateDiscount'}}
+         type='number'
+         value={{item.price}}
+         onInput={{action (mut item.price) value='target.value'}}
+         />
+      </li>
+  {{/each}}
+</ul>
+{{#unless loading}}
+<h4>{{total}}</h4>
+<h6>(discount {{discount}})</h6>
+{{else}}
+  <h4>loading...</h4>
+{{/unless}}
+{{yield}}
