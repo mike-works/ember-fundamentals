@@ -1,5 +1,6 @@
 import Route from '@ember/routing/route';
-import fetch from 'fetch';
+import { isEmpty } from '@ember/utils';
+// import fetch from 'fetch';
 // export const ALL_COURSES = fetch('https://api.mike.works/api/v1/courses')
 //   .then(response => response.json())
 //   .then(responseData => {
@@ -9,11 +10,8 @@ import fetch from 'fetch';
 //   })
 
 export default class extends Route {
-  async model() {
-    let response = await fetch('https://api.mike.works/api/v1/courses')
-    let responseData = await response.json();
-    return responseData.data.map(item => {
-      return Object.assign({ id: item.id }, item.attributes);
-    })
+  model() {
+    let cached = this.store.peekAll('course');
+    return isEmpty(cached) ? this.store.findAll('course') : cached;
   }
 }
