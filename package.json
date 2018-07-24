@@ -17,7 +17,7 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "@ember-decorators/babel-transforms": "^0.1.1",
+    "@ember-decorators/babel-transforms": "^2.0.2",
     "@types/ember": "^2.8.7",
     "@types/ember-data": "^2.14.7",
     "broccoli-asset-rev": "^2.4.5",
