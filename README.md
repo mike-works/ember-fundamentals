@@ -16,11 +16,8 @@
   <a href="https://travis-ci.org/mike-works/ember-fundamentals" title="Build Status">
     <img title="Build Status" src="https://travis-ci.org/mike-works/ember-fundamentals.svg?branch=master"/>
   </a>
-  <a href="https://mike.works/course/ember-basics-cf22ed3" title="Ember Fundamentals">
-    <img title="Course Outline" src="https://img.shields.io/badge/mike.works-course%20outline-blue.svg"/>
-  </a>
-  <a href="https://docs.mike.works/ember-fundamentals-slides" title="Slides">
-    <img title="Slides" src="https://img.shields.io/badge/mike.works-slides-blue.svg"/>
+  <a href="https://github.com/semantic-release/semantic-release" title="Semantic Release">
+    <img title="Semantic Release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-blue.svg"/>
   </a>
 </p>
 <p align='center'>
