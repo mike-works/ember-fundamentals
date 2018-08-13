@@ -10,9 +10,6 @@
 </p>
 
 <p align='center'>
-  <a href="https://greenkeeper.io/" title="Dependencies">
-    <img src="https://badges.greenkeeper.io/mike-works/ember-fundamentals.svg"/>
-  </a>
   <a href="https://travis-ci.org/mike-works/ember-fundamentals" title="Build Status">
     <img title="Build Status" src="https://travis-ci.org/mike-works/ember-fundamentals.svg?branch=master"/>
   </a>
