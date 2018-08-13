@@ -1,7 +1,7 @@
 ---
 language: node_js
 node_js:
-  - "6"
+  - "8"
 
 sudo: required
 dist: trusty
@@ -22,7 +22,7 @@ before_install:
   - npm config set spin false
   - npm install -g greenkeeper-lockfile@1
 
-before_script: 
+before_script:
   - sudo chmod 4755 /opt/google/chrome/chrome-sandbox
   - sudo chown root /opt/google/chrome/chrome-sandbox
   - greenkeeper-lockfile-update
@@ -35,3 +35,9 @@ install:
 script:
   - npm run lint:js
   - npm test
+
+after_success:
+  - npm run travis-deploy-once "npm run semantic-release"
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
