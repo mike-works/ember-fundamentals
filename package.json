@@ -1,5 +1,5 @@
 {
-  "name": "ember-fundamentals",
+  "name": "@mike-works/ember-fundamentals",
   "version": "0.0.0-development",
   "private": true,
   "description": "Mike Works, Inc. Ember Fundamentals Workshop",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@ember-decorators/babel-transforms": "^0.1.1",
+    "@semantic-release/git": "^7.0.1",
     "@types/ember": "^2.8.7",
     "@types/ember-data": "^2.14.7",
     "broccoli-asset-rev": "^2.4.5",
@@ -53,5 +54,33 @@
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
+  },
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/github"
+    ],
+    "prepare": [
+      {
+        "path": "@semantic-release/changelog",
+        "changelogFile": "CHANGELOG.md"
+      },
+      {
+        "path": "@semantic-release/git",
+        "assets": [
+          "package.json",
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    "publish": [
+      "@semantic-release/github"
+    ],
+    "success": [
+      "@semantic-release/github"
+    ],
+    "fail": [
+      "@semantic-release/github"
+    ]
   }
 }
