@@ -1,5 +1,5 @@
 import { test } from 'qunit';
-import moduleForAcceptance from 'ember-fundamentals/tests/helpers/module-for-acceptance';
+import moduleForAcceptance from '../helpers/module-for-acceptance';
 import require from 'require';
 
 if (
