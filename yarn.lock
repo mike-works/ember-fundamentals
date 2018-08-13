@@ -67,6 +67,15 @@
     node-fetch "^2.1.1"
     url-template "^2.0.8"
 
+"@semantic-release/changelog@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-3.0.0.tgz#e01514b517e775cea47aef7df5f5685c7aff2bf2"
+  dependencies:
+    "@semantic-release/error" "^2.1.0"
+    aggregate-error "^1.0.0"
+    fs-extra "^7.0.0"
+    lodash "^4.17.4"
+
 "@semantic-release/commit-analyzer@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/commit-analyzer/-/commit-analyzer-6.0.0.tgz#e26ef70938059f03525573560f65212164953121"

@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@ember-decorators/babel-transforms": "^0.1.1",
+    "@semantic-release/changelog": "^3.0.0",
     "@semantic-release/git": "^7.0.1",
     "@types/ember": "^2.8.7",
     "@types/ember-data": "^2.14.7",
