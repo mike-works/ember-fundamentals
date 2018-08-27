@@ -127,15 +127,15 @@
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-2.2.0.tgz#ee9d5a09c9969eade1ec864776aeda5c5cddbbf0"
 
-"@semantic-release/git@^7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-7.0.1.tgz#18ff915552b022f72ef5c2063d0e85f046ee8be0"
+"@semantic-release/git@^7.0.3":
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-7.0.3.tgz#758ffbb0156e236f1d731c5d36e2bbf46a8098f2"
   dependencies:
     "@semantic-release/error" "^2.1.0"
     aggregate-error "^1.0.0"
     debug "^3.1.0"
     dir-glob "^2.0.0"
-    execa "^0.10.0"
+    execa "^1.0.0"
     fs-extra "^7.0.0"
     globby "^8.0.1"
     lodash "^4.17.4"
@@ -3017,9 +3017,9 @@ ember-runtime-enumerable-includes-polyfill@^2.0.0:
     ember-cli-babel "^6.9.0"
     ember-cli-version-checker "^2.1.0"
 
-ember-source@~3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.3.1.tgz#bcac785b32d5e99867e236979c3fb34536659ecd"
+ember-source@~3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.3.2.tgz#2cc02893166d6b91ebf091521cd49d6598477a73"
   dependencies:
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"
@@ -4070,16 +4070,16 @@ got@^6.7.1:
     unzip-response "^2.0.1"
     url-parse-lax "^1.0.0"
 
-got@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/got/-/got-9.0.0.tgz#8673d2838adbac8a2e4a07e5772e238c701e9b7c"
+got@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/got/-/got-9.1.0.tgz#e31aa530bf953ca51599c5722039f891e49cf2ca"
   dependencies:
     "@sindresorhus/is" "^0.11.0"
     cacheable-request "^4.0.1"
     decompress-response "^3.3.0"
     duplexer3 "^0.1.4"
-    get-stream "^3.0.0"
-    mimic-response "^1.0.0"
+    get-stream "^4.0.0"
+    mimic-response "^1.0.1"
     p-cancelable "^0.5.0"
     to-readable-stream "^1.0.0"
     url-parse-lax "^3.0.0"
@@ -5730,7 +5730,7 @@ mimic-fn@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
 
-mimic-response@^1.0.0:
+mimic-response@^1.0.0, mimic-response@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-1.0.1.tgz#4923538878eef42063cb8a3e3b0798781487ab1b"
 
@@ -8143,17 +8143,17 @@ traverse@~0.6.6:
   version "0.6.6"
   resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
 
-travis-deploy-once@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/travis-deploy-once/-/travis-deploy-once-5.0.2.tgz#7d1a075ba83d5fcffcc5df0436dafb6f388e5542"
+travis-deploy-once@^5.0.4:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/travis-deploy-once/-/travis-deploy-once-5.0.4.tgz#e39e50fbe9e099c28e2858f9d42aacda6a1a7391"
   dependencies:
     babel-plugin-transform-object-rest-spread "^6.26.0"
     babel-polyfill "^6.26.0"
     babel-preset-env "^1.6.1"
     babel-register "^6.26.0"
     chalk "^2.1.0"
-    execa "^0.10.0"
-    got "^9.0.0"
+    execa "^1.0.0"
+    got "^9.1.0"
     p-retry "^2.0.0"
     semver "^5.4.1"
     update-notifier "^2.3.0"
