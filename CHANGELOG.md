@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/mike-works/ember-fundamentals/compare/v1.0.1...v1.0.2) (2018-08-28)
+
+
+### Bug Fixes
+
+* pdate package name ([3caa039](https://github.com/mike-works/ember-fundamentals/commit/3caa039))
+* update index.html ([9e62d78](https://github.com/mike-works/ember-fundamentals/commit/9e62d78))
+
 ## [1.0.1](https://github.com/mike-works/ember-fundamentals/compare/v1.0.0...v1.0.1) (2018-08-13)
 
 
