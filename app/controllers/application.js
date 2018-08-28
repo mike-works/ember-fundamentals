@@ -39,9 +39,11 @@ const ALL_COURSES = [
   }
 ];
 
-export default class extends Controller {
-  constructor() {
-    super();
+export default Controller.extend({
+  planet: 'pluto',
+  '​۟': 'hello',
+  init() {
+    this._super(...arguments);
     this.courses = ALL_COURSES;
   }
-}
+});

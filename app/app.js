@@ -12,3 +12,7 @@ const App = Application.extend({
 loadInitializers(App, config.modulePrefix);
 
 export default App;
+
+// function renderTemplate(context) {
+//   return '<h1>Hello ' + context.planet + '</h1>';
+// }

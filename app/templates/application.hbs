@@ -1,5 +1,15 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
+{{!-- {{welcome-page}} --}}
 {{!-- Feel free to remove this! --}}
+<h1>Hello {{space-ize (unbound planet) " (not a planet)"}}</h1>
+<h1>Hello {{space-ize planet " (not a planet)"}}</h1>
 
-{{outlet}}
+
+{{text-field name="Location" txt=planet type='email'}}
+
+<pre>
+  {{placeholder-url w=194 h=914}}
+</pre>
+<img src={{placeholder-url w=194 h=914}} alt="">
+
+{{!-- {{outlet}} --}}
