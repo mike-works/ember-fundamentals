@@ -27,7 +27,7 @@ if (require.has('@mike-works/ember-fundamentals/utils/course')) {
   });
 
   test('Adding and removing tags', function(assert) {
-    let course = Course.create();
+    let course = Course.create({ title: 'French Literature'});
     let otherCourse = Course.create();
     course.get('tags').addObject('front end');
     assert.equal(
