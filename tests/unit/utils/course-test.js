@@ -1,8 +1,8 @@
 import { module, test } from 'qunit';
 import require from 'require';
 
-if (require.has('ember-fundamentals/utils/course')) {
-  const Course = require('ember-fundamentals/utils/course').default;
+if (require.has('@mike-works/ember-fundamentals/utils/course')) {
+  const Course = require('@mike-works/ember-fundamentals/utils/course').default;
 
   module('Exercise 1 | Modeling Data');
 

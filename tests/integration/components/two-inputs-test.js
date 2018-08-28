@@ -2,7 +2,7 @@ import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 import require from 'require';
 
-if (require.has('ember-fundamentals/components/two-inputs')) {
+if (require.has('@mike-works/ember-fundamentals/components/two-inputs')) {
   moduleForComponent('two-inputs', 'Integration | Component | two inputs', {
     integration: true
   });
