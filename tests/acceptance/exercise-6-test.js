@@ -1,5 +1,6 @@
-import { test } from 'qunit';
-import moduleForAcceptance from '../helpers/module-for-acceptance';
+import { module, test } from 'qunit';
+import { visit, currentURL } from '@ember/test-helpers';
+import { setupApplicationTest } from 'ember-qunit';
 import require from 'require';
 
 if (
@@ -7,12 +8,12 @@ if (
   !require.has('ember-network/fetch') &&
   !require.has('fetch')
 ) {
-  moduleForAcceptance('Exercise 6 | Basic Routing Structure');
+  module('Exercise 6 | Basic Routing Structure', function(hooks) {
+    setupApplicationTest(hooks);
 
-  test('visiting /', function(assert) {
-    visit('/');
+    test('visiting /', async function(assert) {
+      await visit('/');
 
-    andThen(() => {
       assert.equal(currentURL(), '/');
       let $phoenixLink = find('ul a[href="/course/Phoenix%20Fundamentals"]');
       assert.equal(
@@ -41,11 +42,9 @@ if (
           .indexOf('Ember Basics') >= 0,
         'Ember Basics is present in a link on the "/" page'
       );
-    });
 
-    click('ul a[href="/course/Ember%20Basics"]');
+      await click('ul a[href="/course/Ember%20Basics"]');
 
-    andThen(() => {
       assert.ok(find('h1').length > 0, 'At least one H1 on the page');
       assert.ok(
         find('h1.course-title').length > 0,
