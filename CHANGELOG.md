@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/mike-works/ember-fundamentals/compare/v1.0.2...v1.0.3) (2018-08-29)
+
+
+### Bug Fixes
+
+* update tests to RFC232 style ([b75efe9](https://github.com/mike-works/ember-fundamentals/commit/b75efe9))
+
 ## [1.0.2](https://github.com/mike-works/ember-fundamentals/compare/v1.0.1...v1.0.2) (2018-08-28)
 
 
