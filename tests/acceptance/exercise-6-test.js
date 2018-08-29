@@ -4,7 +4,7 @@ import { setupApplicationTest } from 'ember-qunit';
 import require from 'require';
 
 if (
-  require.has('ember-fundamentals/routes/course') &&
+  require.has('@mike-works/ember-fundamentals/routes/course') &&
   !require.has('ember-network/fetch') &&
   !require.has('fetch')
 ) {
