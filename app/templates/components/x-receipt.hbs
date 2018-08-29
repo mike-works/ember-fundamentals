@@ -1,0 +1,20 @@
+<ul>
+  {{#each items as |item|}}
+    <li>{{item.name}}
+      <input type="number" value={{item.qty}} style="width: 30px"
+        onInput={{action (mut item.qty) value="target.value"}}/>
+      @ {{item.price}}
+    </li>
+  {{/each}}
+</ul>
+
+<button onClick={{action 'newReceiptItem' newItemName}}>
+  Add Item
+</button>
+<p>
+  <b>Grand Total:</b> {{grandTotal}}
+</p>
+
+<input type="text" value={{newItemName}}
+  onkeyup={{action (mut newItemName) value='target.value'}}>
+{{yield}}

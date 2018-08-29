@@ -1,7 +1,15 @@
 {{!-- The following component displays Ember's default welcome message. --}}
 {{!-- {{welcome-page}} --}}
 {{!-- Feel free to remove this! --}}
-<h1>Hello {{space-ize (unbound planet) " (not a planet)"}}</h1>
+
+{{x-receipt}}
+
+<ul>
+{{#each courses as |x|}}
+  {{course-list-item model=x}}
+{{/each}}
+</ul>
+{{!-- <h1>Hello {{space-ize (unbound planet) " (not a planet)"}}</h1>
 <h1>Hello {{space-ize planet " (not a planet)"}}</h1>
 
 
@@ -10,6 +18,6 @@
 <pre>
   {{placeholder-url w=194 h=914}}
 </pre>
-<img src={{placeholder-url w=194 h=914}} alt="">
+<img src={{placeholder-url w=194 h=914}} alt=""> --}}
 
 {{!-- {{outlet}} --}}
