@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/mike-works/ember-fundamentals/compare/v1.0.3...v1.0.4) (2018-08-29)
+
+
+### Bug Fixes
+
+* exercise 7 test fixes ([caea16b](https://github.com/mike-works/ember-fundamentals/commit/caea16b))
+
 ## [1.0.3](https://github.com/mike-works/ember-fundamentals/compare/v1.0.2...v1.0.3) (2018-08-29)
 
 
