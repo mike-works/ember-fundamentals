@@ -1,8 +1,11 @@
 <input type="text"
-  value={{str}}
+  value={{lowerStr}}
   class="lowercase-field"
-  oninput={{action (mut str) value='target.value'}} />
+  oninput={{action (mut lowerStr) value='target.value'}} />
 <input type="text"
   value={{upperStr}}
   class="uppercase-field"
   oninput={{action (mut upperStr) value='target.value'}} />
+<pre>{{str}}</pre>
+<pre>last LOWER: {{lowerStr_last}}</pre>
+<pre>last UPPER: {{upperStr_last}}</pre>

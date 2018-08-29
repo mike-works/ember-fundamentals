@@ -1,15 +1,21 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
 
-export default Component.extend({
-  str: '',
-  upperStr: computed('str', {
+function transformString(key /* str */, transformFn) {
+  return computed(key, {
     get() {
-      return this.get('str').toUpperCase();
+      return transformFn(this.get(key))
     },
-    set(_key, newVal) {
-      this.set('str', newVal.toLowerCase());
-      return newVal.toUpperCase();
+    set(cpKey /* lowerStr */, newVal, oldVal) {
+      this.set(`${cpKey}_last`, oldVal);
+      this.set(key, newVal);
+      return transformFn(newVal);
     }
   })
+}
+
+export default Component.extend({
+  str: '',
+  lowerStr: transformString('str', s => s.toLowerCase()),
+  upperStr: transformString('str', s => s.toUpperCase())
 });
