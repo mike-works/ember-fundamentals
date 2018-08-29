@@ -66,6 +66,8 @@ if (require.has('@mike-works/ember-fundamentals/components/two-inputs')) {
       "After str changed from outside the component, input.uppercase-field's value has changed to'GOODBYE'"
     );
     this.$('input.uppercase-field').val('GOODBYEE');
+    this.$('input.uppercase-field').triggerHandler('keydown');
+    this.$('input.uppercase-field').triggerHandler('keyup');
     this.$('input.uppercase-field').triggerHandler('input');
     this.$('input.uppercase-field').triggerHandler('change');
     assert.equal(
