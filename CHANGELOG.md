@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/mike-works/ember-fundamentals/compare/v1.0.4...v1.0.5) (2018-08-29)
+
+
+### Bug Fixes
+
+* ex6 tests ([70ba9e4](https://github.com/mike-works/ember-fundamentals/commit/70ba9e4))
+
 ## [1.0.4](https://github.com/mike-works/ember-fundamentals/compare/v1.0.3...v1.0.4) (2018-08-29)
 
 
