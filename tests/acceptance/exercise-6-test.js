@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { visit, currentURL } from '@ember/test-helpers';
+import { visit, click, currentURL, findAll } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import require from 'require';
 
@@ -13,31 +13,29 @@ if (
 
     test('visiting /', async function(assert) {
       await visit('/');
-
       assert.equal(currentURL(), '/');
-      let $phoenixLink = find('ul a[href="/course/Phoenix%20Fundamentals"]');
+      let $phoenixLink = findAll('ul a[href="/course/Phoenix%20Fundamentals"]');
       assert.equal(
         $phoenixLink.length,
         1,
         'Link with href="/course/Phoenix%20Fundamentals" is present on the page'
       );
       assert.ok(
-        $phoenixLink
-          .text()
+        $phoenixLink[0].text
           .trim()
           .indexOf('Phoenix Fundamentals') >= 0,
         'Phoenix Fundamentals is present in a link on the "/" page'
       );
 
-      let $emberBasicsLink = find('ul a[href="/course/Ember%20Basics"]');
+      let $emberBasicsLink = findAll('ul a[href="/course/Ember%20Basics"]');
       assert.equal(
         $emberBasicsLink.length,
         1,
         'Link with href="/course/Ember%20Basics" is present on the page'
       );
       assert.ok(
-        $emberBasicsLink
-          .text()
+        $emberBasicsLink[0]
+          .text
           .trim()
           .indexOf('Ember Basics') >= 0,
         'Ember Basics is present in a link on the "/" page'
@@ -45,13 +43,13 @@ if (
 
       await click('ul a[href="/course/Ember%20Basics"]');
 
-      assert.ok(find('h1').length > 0, 'At least one H1 on the page');
+      assert.ok(findAll('h1').length > 0, 'At least one H1 on the page');
       assert.ok(
-        find('h1.course-title').length > 0,
+        findAll('h1.course-title').length > 0,
         'H1 has a class .course-title'
       );
       assert.equal(
-        find('h1.course-title').text(),
+        findAll('h1.course-title')[0].textContent,
         'Ember Basics',
         'Course title is rendered inside the h1.course-title'
       );
