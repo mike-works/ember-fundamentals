@@ -1,4 +1,4 @@
-import Controller from '@ember/controller';
+import Route from '@ember/routing/route';
 
 const ALL_COURSES = [
   {
@@ -39,11 +39,8 @@ const ALL_COURSES = [
   }
 ];
 
-export default Controller.extend({
-  planet: 'pluto',
-  '​۟': 'hello',
-  init() {
-    this._super(...arguments);
-    this.courses = ALL_COURSES;
+export default Route.extend({
+  model() {
+    return ALL_COURSES;
   }
 });

@@ -13,6 +13,9 @@ Router.map(function() {
     });
   });
 
+  this.route('course', {
+    path: 'course/:id'
+  });
 });
 
 export default Router;
