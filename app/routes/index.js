@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-  model() {
-    return this.modelFor('application');
+  async model() {
+    return await this.store.findAll('course');
   }
 });

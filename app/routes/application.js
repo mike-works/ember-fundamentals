@@ -40,23 +40,19 @@ import Route from '@ember/routing/route';
 // ];
 
 export default Route.extend({
-  async model() {
-    try {
-      // wait for first byte
-      const response = await fetch('https://api.mike.works/api/v1/courses');
-      const responseData = await response.json(); // Wait for last byte
-      // Transform each item in response.data[]
-      return responseData.data.map(item => {
-        /**
-         * We want everything on item.attributes, but also item.id
-         */
-        return Object.assign({
-          id: item.id
-        }, item.attributes)
-      });
-    } catch (e) {
-      console.error('problem loading courses');
-      throw e;
-    }
-  }
+  // async model() {
+  //   return this.store.findAll('course');
+  //     // // wait for first byte
+  //     // const response = await fetch('https://api.mike.works/api/v1/courses');
+  //     // const responseData = await response.json(); // Wait for last byte
+  //     // // Transform each item in response.data[]
+  //     // return responseData.data.map(item => {
+  //     //   /**
+  //     //    * We want everything on item.attributes, but also item.id
+  //     //    */
+  //     //   return Object.assign({
+  //     //     id: item.id
+  //     //   }, item.attributes)
+  //     // });
+  // }
 });
