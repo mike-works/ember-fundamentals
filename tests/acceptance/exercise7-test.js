@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { visit, currentURL, findAll } from '@ember/test-helpers';
+import { visit, currentURL, findAll, click } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import require from 'require';
 
@@ -30,7 +30,7 @@ if (
         'Phoenix Fundamentals is present in a link on the "/" page'
       );
 
-      let $emberBasicsLink = find('ul a[href="/course/ember-basics-cf22ed3"]');
+      let $emberBasicsLink = findAll('ul a[href="/course/ember-basics-cf22ed3"]');
       assert.equal(
         $emberBasicsLink.length,
         1,
@@ -46,7 +46,7 @@ if (
 
       await click('ul a[href="/course/ember-basics-cf22ed3"]');
 
-      assert.ok(find('h1').length > 0, 'At least one H1 on the page');
+      assert.ok(findAll('h1').length > 0, 'At least one H1 on the page');
       assert.ok(
         findAll('h1.course-title').length > 0,
         'H1 has a class .course-title'
