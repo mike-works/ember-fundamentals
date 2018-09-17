@@ -8052,9 +8052,9 @@ sax@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
-semantic-release@^15.9.14:
-  version "15.9.14"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.9.14.tgz#108fa88649e318b85f728adc9375b12d68075726"
+semantic-release@^15.9.15:
+  version "15.9.15"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.9.15.tgz#e423dc5468f7e5bf601d5ca8bf4ae6d4ada5eadf"
   dependencies:
     "@semantic-release/commit-analyzer" "^6.0.0"
     "@semantic-release/error" "^2.2.0"
@@ -8063,7 +8063,7 @@ semantic-release@^15.9.14:
     "@semantic-release/release-notes-generator" "^7.0.0"
     aggregate-error "^1.0.0"
     cosmiconfig "^5.0.1"
-    debug "^3.1.0"
+    debug "^4.0.0"
     env-ci "^2.4.0"
     execa "^1.0.0"
     figures "^2.0.0"
