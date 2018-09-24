@@ -50,7 +50,7 @@
     "eslint-plugin-ember": "^5.0.0",
     "loader.js": "^4.2.3",
     "semantic-release": "^15.9.16",
-    "travis-deploy-once": "^5.0.7"
+    "travis-deploy-once": "^5.0.8"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
