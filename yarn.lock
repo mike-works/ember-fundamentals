@@ -787,9 +787,9 @@
   dependencies:
     "@types/estree" "*"
 
-"@types/ember-data@^3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@types/ember-data/-/ember-data-3.0.4.tgz#6248d57dce514c122691ac4df9114ee0242d8658"
+"@types/ember-data@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@types/ember-data/-/ember-data-3.1.1.tgz#58037d22e133224bad2eb2f01f4795d687f2986c"
   dependencies:
     "@types/ember" "*"
     "@types/rsvp" "*"
