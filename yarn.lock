@@ -638,7 +638,7 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@ember-decorators/babel-transforms@^2.1.2":
+"@ember-decorators/babel-transforms@2.1.2":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@ember-decorators/babel-transforms/-/babel-transforms-2.1.2.tgz#b646e53ece7c18ae42cd03f320146cb1f26f4ebf"
   integrity sha512-Sfa4bjtRpWytbBZK3fAaUp6/2QpMDds6uGA5K7S+Iz1JGX+PHTLDjl1/5t1UaOMokEB1Z9jMtwp4yRcullfFdg==
@@ -740,7 +740,7 @@
   dependencies:
     "@glimmer/di" "^0.2.0"
 
-"@mike-works/js-lib-renovate-config@^2.0.0":
+"@mike-works/js-lib-renovate-config@2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@mike-works/js-lib-renovate-config/-/js-lib-renovate-config-2.0.0.tgz#eb9b1cb4b68e38ba4e59ae5ef853def84d329397"
   integrity sha512-hzw/xYMwE1jcKK+pAaqIo3brzzn5ktR73odlPn3SUJJ1MxSuoxlfgWpYrbxuvkwfuS8qVBhVlDJIibCot+Ad6A==
@@ -773,7 +773,7 @@
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
 
-"@semantic-release/changelog@^3.0.1":
+"@semantic-release/changelog@3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-3.0.1.tgz#d39a8130aa33c54541e529322769a1c8c51dfc54"
   integrity sha512-N3lWwS3SUQmjBI/IoxwfQwPHAeQgYkvM63nzBpYkp2DXQ9zdLs5ZYpD1oln//wWCKVSIY2tPDs7KD4LVVh6u5Q==
@@ -800,7 +800,7 @@
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-2.2.0.tgz#ee9d5a09c9969eade1ec864776aeda5c5cddbbf0"
   integrity sha512-9Tj/qn+y2j+sjCI3Jd+qseGtHjOAeg7dU2/lVcqIQ9TV3QDaDXDYXcoOHU+7o2Hwh8L8ymL4gfuO7KxDs3q2zg==
 
-"@semantic-release/git@^7.0.4":
+"@semantic-release/git@7.0.4":
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-7.0.4.tgz#b10c85744044d797ebf979eb0fa1e6e499b4100c"
   integrity sha512-/kdHnetgogIC/W5CDYQ1xmxy+4KQG7MqkgnqcPi4dj8tXCJrmVy9XAR2LySUhRTtnDniLq0H29DsD9HW5x+PKQ==
@@ -888,7 +888,7 @@
   dependencies:
     "@types/estree" "*"
 
-"@types/ember-data@^3.1.3":
+"@types/ember-data@3.1.3":
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/@types/ember-data/-/ember-data-3.1.3.tgz#b538cd36e7f8d4bc7a436beae1f1efd789881748"
   integrity sha512-szt9cYQkIzxQFsSpnHQ0GqPuHxT8wUH6JmWJflL8+1asEa/aXYR+IEbAC8dqeYGms93xIqIAetHbJLnUR8kAzA==
@@ -896,7 +896,7 @@
     "@types/ember" "*"
     "@types/rsvp" "*"
 
-"@types/ember@*", "@types/ember@^3.0.25":
+"@types/ember@*", "@types/ember@3.0.25":
   version "3.0.25"
   resolved "https://registry.yarnpkg.com/@types/ember/-/ember-3.0.25.tgz#9ab6a8be3d03a72176824bb7a59583648b6b1ced"
   integrity sha512-+M4yzJ0v+Ly62clAoxmAxViFg+/2HiktQnzKh825/y9Ra3k7o4PFsas0Z7xERmRVleqtPikehwdi6BuEnPUVkw==
@@ -3894,7 +3894,7 @@ electron-to-chromium@^1.3.61:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.62.tgz#2e8e2dc070c800ec8ce23ff9dfcceb585d6f9ed8"
   integrity sha512-x09ndL/Gjnuk3unlAyoGyUg3wbs4w/bXurgL7wL913vXHAOWmMhrLf1VNGRaMLngmadd5Q8gsV9BFuIr6rP+Xg==
 
-ember-ajax@^4.0.0:
+ember-ajax@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/ember-ajax/-/ember-ajax-4.0.0.tgz#c21e97db81393f3f48c6e402139fb517bef1b421"
   integrity sha512-IAdzj2u/fVMu57jlzMq/OSb4xp1Viyn52TyseWbjuPDr4Kn/Wz0HR40GckQdu+3vH3yJkh5aMzTIMTM7DCUlcw==
@@ -3910,7 +3910,7 @@ ember-assign-polyfill@~2.4.0:
     ember-cli-babel "^6.6.0"
     ember-cli-version-checker "^2.0.0"
 
-ember-cli-app-version@^3.0.0:
+ember-cli-app-version@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ember-cli-app-version/-/ember-cli-app-version-3.2.0.tgz#7b9ad0e1b63ae0518648356ee24c703e922bc26e"
   integrity sha512-fHWOJElSw8JL03FNCHrT0RdWhGpWEQ4VQ10unEwwhVZ+OANNcOLz8O2dA3D5iuB4bb0fMLwjEwYZGM62+TBs1Q==
@@ -4274,7 +4274,7 @@ ember-compatibility-helpers@^1.0.0:
     ember-cli-version-checker "^2.1.1"
     semver "^5.4.1"
 
-ember-data@^3.5.0:
+ember-data@3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/ember-data/-/ember-data-3.5.0.tgz#1cd22312112fd3a961248090eac850d513f844cf"
   integrity sha512-BVfObUyajwP93/dTeSiCSUQSU28EVLsq2G8OithwnAgxg2Neupln2cnRBW2+Gv4JzWwUFk075GcuL7qsD+xNmQ==
@@ -4306,7 +4306,7 @@ ember-data@^3.5.0:
     semver "^5.5.0"
     silent-error "^1.1.0"
 
-ember-decorators@^2.5.2:
+ember-decorators@2.5.2:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/ember-decorators/-/ember-decorators-2.5.2.tgz#6d69c48d86df5f90c3d540486681c08a33256196"
   integrity sha512-nDAEvV4IK+uw+Rl4yBhH6q1rm9+3EIfTPsQHfXBr77qnnOtoXLlHQv8Z087KnaET06COKzszBLrGqLgJHium/Q==
@@ -4340,7 +4340,7 @@ ember-load-initializers@^2.0.0:
   dependencies:
     ember-cli-babel "^7.0.0"
 
-ember-maybe-import-regenerator@^0.1.6:
+ember-maybe-import-regenerator@0.1.6:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/ember-maybe-import-regenerator/-/ember-maybe-import-regenerator-0.1.6.tgz#35d41828afa6d6a59bc0da3ce47f34c573d776ca"
   integrity sha1-NdQYKK+m1qWbwNo85H80xXPXdso=
@@ -4426,7 +4426,7 @@ ember-source@~3.5.1:
     jquery "^3.3.1"
     resolve "^1.6.0"
 
-ember-welcome-page@^3.2.0:
+ember-welcome-page@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ember-welcome-page/-/ember-welcome-page-3.2.0.tgz#fe9903dbbaccfb4a2a05f42c716b7d07470f2d78"
   integrity sha512-aDUIGwPsAvv77K6jplnIvQamNBOuqRKlSXsaWaIkjpIi4ZTbDLnyDkuxMBgxCKiajr7wGhrghAelRQHbKUK5aw==
@@ -9668,7 +9668,7 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release@^15.10.7:
+semantic-release@15.10.7:
   version "15.10.7"
   resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.10.7.tgz#c1ab858363a9eff078a9cb7355f478482b6ba3f0"
   integrity sha512-tG94NSTecmpQoxUmJZM5ymp3R2CT+26WoQhS5cnXz/QPNTooJBnkXGvKK6Vrgg9nrPRtsylSQDBWvZ0fPWjfew==
@@ -10620,7 +10620,7 @@ traverse@~0.6.6:
   resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
   integrity sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=
 
-travis-deploy-once@^5.0.9:
+travis-deploy-once@5.0.9:
   version "5.0.9"
   resolved "https://registry.yarnpkg.com/travis-deploy-once/-/travis-deploy-once-5.0.9.tgz#c5a2f639e17d8fd542f66d25ade126179d5e8acf"
   integrity sha512-cyHFErzq0HTEGY29RAq1clqFdt/IkCrlcOmyM1cGoGnEyukrrFi1fpy6JH3Mlf+88XsFwvluqKVWzj2bdz3k8A==
