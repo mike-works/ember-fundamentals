@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/mike-works/ember-fundamentals/compare/v1.0.5...v1.1.0) (2018-11-11)
+
+
+### Bug Fixes
+
+* correct reference to built js and css from app/index.html ([1d2ef95](https://github.com/mike-works/ember-fundamentals/commit/1d2ef95))
+* shared renovate config ([ddb1f77](https://github.com/mike-works/ember-fundamentals/commit/ddb1f77))
+
+
+### Features
+
+* update to ember 3.5 ([0213b19](https://github.com/mike-works/ember-fundamentals/commit/0213b19))
+
 ## [1.0.5](https://github.com/mike-works/ember-fundamentals/compare/v1.0.4...v1.0.5) (2018-08-29)
 
 
