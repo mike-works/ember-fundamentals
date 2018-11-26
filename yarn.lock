@@ -856,10 +856,10 @@
     babel-runtime "6.26.0"
     execa "0.9.0"
 
-"@ember-decorators/babel-transforms@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/babel-transforms/-/babel-transforms-3.1.0.tgz#7702c673f0cbb8a59b7a8f2a82707d8ef190bcbd"
-  integrity sha512-jr/HJpKX+lbgrXLvbRHuMVMtXvFmirmXDKzYN6k+G+gDjTU7SZF2DQ9yNe0P2gSW7hxU7AoqyfZFUVY+KHU6+g==
+"@ember-decorators/babel-transforms@3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@ember-decorators/babel-transforms/-/babel-transforms-3.1.1.tgz#e6790c3bf47d5419789e7d7a95c5a54171bc830d"
+  integrity sha512-/pjoyKJPzdSsqHy0uawLtfWfGgHnHVvBMqRPGhEpc41MaWfhiRksDeuVKAv+pM3TucCuwqEQjCCFJYar+qfIzw==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.1.0"
     "@babel/plugin-proposal-decorators" "^7.1.2"
