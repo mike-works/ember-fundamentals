@@ -59,7 +59,7 @@
     "eslint-plugin-ember": "5.4.0",
     "loader.js": "4.7.0",
     "semantic-release": "15.12.5",
-    "travis-deploy-once": "5.0.9",
+    "travis-deploy-once": "5.0.10",
     "qunit-dom": "0.8.3"
   },
   "engines": {
