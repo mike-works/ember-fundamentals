@@ -1112,7 +1112,23 @@
     lodash "^4.17.4"
     parse-json "^4.0.0"
 
-"@semantic-release/git@7.0.5", "@semantic-release/git@^7.0.1":
+"@semantic-release/git@7.0.6":
+  version "7.0.6"
+  resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-7.0.6.tgz#07f8fe177bcf65109c6bc2f504f1223d8e6a3d5a"
+  integrity sha512-Uyi/RFBYv8jecMo7vJfjsr9rweJkOPuY6CJOITbOzhHmJjZssVOf7sS+zuqEQQsVzU+PPYIjx86HkIzbve/Evg==
+  dependencies:
+    "@semantic-release/error" "^2.1.0"
+    aggregate-error "^1.0.0"
+    debug "^4.0.0"
+    dir-glob "^2.0.0"
+    execa "^1.0.0"
+    fs-extra "^7.0.0"
+    globby "^8.0.1"
+    lodash "^4.17.4"
+    micromatch "^3.1.4"
+    p-reduce "^1.0.0"
+
+"@semantic-release/git@^7.0.1":
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-7.0.5.tgz#640e66683dbbb0a0771e9968e2dc15ec5facaf38"
   integrity sha512-90TDMAQw9S5BXjygpEb8zdwLCnUmP5G2GfKHUvmFapFNh3UsI1AJljEUe5hJh/GOuHiyBD/whnCMYExsp8a34Q==
