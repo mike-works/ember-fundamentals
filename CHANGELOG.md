@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/mike-works/ember-fundamentals/compare/v1.2.0...v1.2.1) (2019-01-26)
+
+
+### Bug Fixes
+
+* disable ember/no-restricted-resolver-tests ([1eea3e0](https://github.com/mike-works/ember-fundamentals/commit/1eea3e0))
+
 # [1.2.0](https://github.com/mike-works/ember-fundamentals/compare/v1.1.0...v1.2.0) (2019-01-26)
 
 
