@@ -10,7 +10,9 @@ module.exports = {
   env: {
     browser: true
   },
-  rules: {},
+  rules: {
+    'ember/no-restricted-resolver-tests': 'off'
+  },
   overrides: [
     // node files
     {
