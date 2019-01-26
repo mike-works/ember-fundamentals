@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/mike-works/ember-fundamentals/compare/v1.1.0...v1.2.0) (2019-01-26)
+
+
+### Features
+
+* 3.x compatibility ([431491c](https://github.com/mike-works/ember-fundamentals/commit/431491c))
+
 # [1.1.0](https://github.com/mike-works/ember-fundamentals/compare/v1.0.5...v1.1.0) (2018-11-11)
 
 
