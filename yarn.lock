@@ -4724,7 +4724,7 @@ ember-cli-babel-plugin-helpers@^1.1.0:
   resolved "https://registry.yarnpkg.com/ember-cli-babel-plugin-helpers/-/ember-cli-babel-plugin-helpers-1.1.0.tgz#de3baedd093163b6c2461f95964888c1676325ac"
   integrity sha512-Zr4my8Xn+CzO0gIuFNXji0eTRml5AxZUTDQz/wsNJ5AJAtyFWCY4QtKdoELNNbiCVGt1lq5yLiwTm4scGKu6xA==
 
-ember-cli-babel@7.7.3:
+ember-cli-babel@7.7.3, ember-cli-babel@^7.4.2:
   version "7.7.3"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.7.3.tgz#f94709f6727583d18685ca6773a995877b87b8a0"
   integrity sha512-/LWwyKIoSlZQ7k52P+6agC7AhcOBqPJ5C2u27qXHVVxKvCtg6ahNuRk/KmfZmV4zkuw4EjTZxfJE1PzpFyHkXg==
@@ -4806,30 +4806,6 @@ ember-cli-babel@^7.1.4, ember-cli-babel@^7.4.3, ember-cli-babel@^7.5.0:
     amd-name-resolver "^1.2.1"
     babel-plugin-debug-macros "^0.3.0"
     babel-plugin-ember-modules-api-polyfill "^2.7.0"
-    babel-plugin-module-resolver "^3.1.1"
-    broccoli-babel-transpiler "^7.1.2"
-    broccoli-debug "^0.6.4"
-    broccoli-funnel "^2.0.1"
-    broccoli-source "^1.1.0"
-    clone "^2.1.2"
-    ember-cli-version-checker "^2.1.2"
-    ensure-posix-path "^1.0.2"
-    semver "^5.5.0"
-
-ember-cli-babel@^7.2.0:
-  version "7.4.2"
-  resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.4.2.tgz#9d7daa165b509e41f6dc3bb443ae32072f766aa2"
-  integrity sha512-5PJOkQ3B3Cvef2nQVPuZSPA6ckwiED3qF4cqzu7jcKhZ0Fy2TwPqABVbiPBJ46NujAsMZrjverVRST74Q25GqQ==
-  dependencies:
-    "@babel/core" "^7.0.0"
-    "@babel/plugin-transform-modules-amd" "^7.0.0"
-    "@babel/plugin-transform-runtime" "^7.2.0"
-    "@babel/polyfill" "^7.0.0"
-    "@babel/preset-env" "^7.0.0"
-    "@babel/runtime" "^7.2.0"
-    amd-name-resolver "^1.2.1"
-    babel-plugin-debug-macros "^0.2.0-beta.6"
-    babel-plugin-ember-modules-api-polyfill "^2.6.0"
     babel-plugin-module-resolver "^3.1.1"
     broccoli-babel-transpiler "^7.1.2"
     broccoli-debug "^0.6.4"
@@ -5345,25 +5321,25 @@ ember-source-channel-url@^1.0.1, ember-source-channel-url@^1.1.0:
   dependencies:
     got "^8.0.1"
 
-ember-source@3.8.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.8.0.tgz#b84ba995d5049514a146c6df20c2fe20de08f211"
-  integrity sha512-iar9EL0AglbwgsLl8jeh++2mnnpBL2u/JUttP6jjkN/pItHfBGlgBtQ3GH0xyG37DH2SbP5bsj3pBM3xm7rTdA==
+ember-source@3.9.0:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.9.0.tgz#cab72c07c30d8313e1cae3ef9a68c0a3d7d1b7de"
+  integrity sha512-VHeovle0+ZBnIbEcuNcIl1+HfActbplkJBMcaXAj/sCp46ayNPHB0zl+0ix74j+MOTiu8GEXZ6GHaqgwGmhvMw==
   dependencies:
-    broccoli-funnel "^2.0.1"
+    broccoli-funnel "^2.0.2"
     broccoli-merge-trees "^3.0.2"
-    chalk "^2.3.0"
-    ember-cli-babel "^7.2.0"
+    chalk "^2.4.2"
+    ember-cli-babel "^7.4.2"
     ember-cli-get-component-path-option "^1.0.0"
     ember-cli-is-package-missing "^1.0.0"
     ember-cli-normalize-entity-name "^1.0.0"
     ember-cli-path-utils "^1.0.0"
     ember-cli-string-utils "^1.1.0"
-    ember-cli-version-checker "^2.1.0"
+    ember-cli-version-checker "^3.0.1"
     ember-router-generator "^1.2.3"
     inflection "^1.12.0"
     jquery "^3.3.1"
-    resolve "^1.9.0"
+    resolve "^1.10.0"
 
 ember-template-lint@^1.0.0-beta.5:
   version "1.0.0-beta.6"
