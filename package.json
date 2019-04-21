@@ -56,7 +56,7 @@
     "ember-source": "3.9.1",
     "ember-try": "1.1.0",
     "ember-welcome-page": "4.0.0",
-    "eslint-plugin-ember": "6.4.0",
+    "eslint-plugin-ember": "6.4.1",
     "loader.js": "4.7.0",
     "semantic-release": "15.13.3",
     "travis-deploy-once": "5.0.11",
