@@ -60,7 +60,7 @@
     "loader.js": "4.7.0",
     "semantic-release": "15.14.0",
     "travis-deploy-once": "5.0.11",
-    "qunit-dom": "1.4.0"
+    "qunit-dom": "1.5.0"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
