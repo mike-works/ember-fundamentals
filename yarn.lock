@@ -9115,10 +9115,10 @@ ember-assign-polyfill@~2.4.0:
     ember-cli-babel "^6.6.0"
     ember-cli-version-checker "^2.0.0"
 
-ember-auto-import@^1.7.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-1.8.0.tgz#de7624b36ceb53a5a5878ebfe86ae70f0fea7921"
-  integrity sha512-pX8rqT6oWiotz4n4rHDlYrVnQl0KVGanv/a+E2xUnkjsyL2K5JfrwJdyRaDsMQPNHkrz12HFnR/WKhjRoVDoIA==
+ember-auto-import@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-1.10.0.tgz#eb6fba6b66974cb86adc42bd835e3cacbf32ebd7"
+  integrity sha512-E2dI/8x2rJ3GIgTXy+HMKjLiLrV/yDlHPp9Wgzz4W1UWAV2l0KsdbIxAu+rWGUqFIAEhpzFUe8fj0E+Tin+Z3w==
   dependencies:
     "@babel/core" "^7.1.6"
     "@babel/preset-env" "^7.10.2"
@@ -9128,7 +9128,6 @@ ember-auto-import@^1.7.0:
     babel-core "^6.26.3"
     babel-loader "^8.0.6"
     babel-plugin-syntax-dynamic-import "^6.18.0"
-    babel-template "^6.26.0"
     babylon "^6.18.0"
     broccoli-debug "^0.6.4"
     broccoli-node-api "^1.7.0"
@@ -9142,8 +9141,7 @@ ember-auto-import@^1.7.0:
     js-string-escape "^1.0.1"
     lodash "^4.17.19"
     mkdirp "^0.5.1"
-    pkg-up "^2.0.0"
-    resolve "^1.7.1"
+    resolve-package-path "^3.1.0"
     rimraf "^2.6.2"
     semver "^7.3.4"
     symlink-or-copy "^1.2.0"
@@ -9869,15 +9867,15 @@ ember-maybe-import-regenerator@0.1.6:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
-ember-qunit@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-5.1.0.tgz#4e75aa91b0bb190e1dc3ffb939e2b81bb06cd642"
-  integrity sha512-a2kb85CD49gMgl4HFJjo5N5lgX4He7zOL5VSYQzOFU7LEauVjOsOyDGqI5rYmtMoC5LpWM2KNnCxODZsGE1uVA==
+ember-qunit@5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-5.1.1.tgz#cd192e016889cf768ba661b7b91a2896f5274642"
+  integrity sha512-6kWWKPeqGtPu0AwrV3ZyVp2Z9EKykKx6B5pclOHoGcmcUy93UUGG8micicPSO//8pLnnFx4R34RvuKJd/Scifw==
   dependencies:
     broccoli-funnel "^3.0.3"
     broccoli-merge-trees "^3.0.2"
     common-tags "^1.8.0"
-    ember-auto-import "^1.7.0"
+    ember-auto-import "^1.10.0"
     ember-cli-babel "^7.23.0"
     ember-cli-test-loader "^3.0.0"
     resolve-package-path "^3.1.0"
@@ -11975,7 +11973,7 @@ has-values@^1.0.0:
     is-number "^3.0.0"
     kind-of "^4.0.0"
 
-has@^1.0.1, has@^1.0.3:
+has@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/has/-/has-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"
   integrity sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
@@ -12595,13 +12593,6 @@ is-cidr@^2.0.6:
   integrity sha512-A578p1dV22TgPXn6NCaDAPj6vJvYsBgAzUrAd28a4oldeXJjWqEUuSZOLIW3im51mazOKsoyVp8NU/OItlWacw==
   dependencies:
     cidr-regex "^2.0.8"
-
-is-core-module@^2.1.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.2.0.tgz#97037ef3d52224d85163f5597b2b63d9afed981a"
-  integrity sha512-XRAfAdyyY5F5cOXn7hYQDqh2Xmii+DEfIcQGxK/uNwMHhIkPWO0g8msXcbzLe+MpGoR951MlqM/2iIlU4vKDdQ==
-  dependencies:
-    has "^1.0.3"
 
 is-data-descriptor@^0.1.4:
   version "0.1.4"
@@ -16764,14 +16755,6 @@ resolve@^1.11.1, resolve@^1.13.1, resolve@^1.17.0:
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.17.0.tgz#b25941b54968231cc2d1bb76a79cb7f2c0bf8444"
   integrity sha512-ic+7JYiV8Vi2yzQGFWOkiZD5Z9z7O2Zhm9XMaTxdJExKasieFCr+yXZ/WmXsckHiKl12ar0y6XiXDx3m4RHn1w==
   dependencies:
-    path-parse "^1.0.6"
-
-resolve@^1.7.1:
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.19.0.tgz#1af5bf630409734a067cae29318aac7fa29a267c"
-  integrity sha512-rArEXAgsBG4UgRGcynxWIWKFvh/XZCcS8UJdHhwy91zwAvCZIbcs+vAbflgBnNjYMs/i/i+/Ux6IZhML1yPvxg==
-  dependencies:
-    is-core-module "^2.1.0"
     path-parse "^1.0.6"
 
 resolve@^1.9.0:
