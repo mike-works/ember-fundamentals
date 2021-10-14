@@ -5721,13 +5721,6 @@ babel-plugin-ember-modules-api-polyfill@^3.2.0:
   dependencies:
     ember-rfc176-data "^0.3.16"
 
-babel-plugin-ember-modules-api-polyfill@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-ember-modules-api-polyfill/-/babel-plugin-ember-modules-api-polyfill-3.2.1.tgz#715252ffde309da36fb32cd6a9bad5c6b61edd33"
-  integrity sha512-7k4gM0VLAMjoWVxLBDqavH/Dn4mBfzqTuQmtGmZgsdQ4SYVEJ7dewUVeqWBVn5v3QspW4VSoeXh4rHPPlp/rPw==
-  dependencies:
-    ember-rfc176-data "^0.3.16"
-
 babel-plugin-ember-modules-api-polyfill@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-ember-modules-api-polyfill/-/babel-plugin-ember-modules-api-polyfill-3.4.0.tgz#3f5e0457e135f8a29b3a8b6910806bb5b524649e"
@@ -9317,38 +9310,6 @@ ember-cli-babel@^7.22.1:
     rimraf "^3.0.1"
     semver "^5.5.0"
 
-ember-cli-babel@^7.23.1:
-  version "7.23.1"
-  resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.23.1.tgz#d1517228ede08a5d4b045c78a7429728e956b30b"
-  integrity sha512-qYggmt3hRs6QJ6cRkww3ahMpyP8IEV2KFrIRO/Z6hu9MkE/8Y28Xd5NjQl6fPV3oLoG0vwuHzhNe3Jr7Wec8zw==
-  dependencies:
-    "@babel/core" "^7.12.0"
-    "@babel/helper-compilation-targets" "^7.12.0"
-    "@babel/plugin-proposal-class-properties" "^7.10.4"
-    "@babel/plugin-proposal-decorators" "^7.10.5"
-    "@babel/plugin-transform-modules-amd" "^7.10.5"
-    "@babel/plugin-transform-runtime" "^7.12.0"
-    "@babel/plugin-transform-typescript" "^7.12.0"
-    "@babel/polyfill" "^7.11.5"
-    "@babel/preset-env" "^7.12.0"
-    "@babel/runtime" "^7.12.0"
-    amd-name-resolver "^1.2.1"
-    babel-plugin-debug-macros "^0.3.3"
-    babel-plugin-ember-data-packages-polyfill "^0.1.2"
-    babel-plugin-ember-modules-api-polyfill "^3.2.1"
-    babel-plugin-module-resolver "^3.1.1"
-    broccoli-babel-transpiler "^7.8.0"
-    broccoli-debug "^0.6.4"
-    broccoli-funnel "^2.0.1"
-    broccoli-source "^1.1.0"
-    clone "^2.1.2"
-    ember-cli-babel-plugin-helpers "^1.1.1"
-    ember-cli-version-checker "^4.1.0"
-    ensure-posix-path "^1.0.2"
-    fixturify-project "^1.10.0"
-    rimraf "^3.0.1"
-    semver "^5.5.0"
-
 ember-cli-babel@^7.5.0:
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.5.0.tgz#af654dcef23630391d2efe85aaa3bdf8b6ca17b7"
@@ -9470,7 +9431,7 @@ ember-cli-htmlbars@6.0.0:
     strip-bom "^4.0.0"
     walk-sync "^2.2.0"
 
-ember-cli-htmlbars@^5.6.2:
+ember-cli-htmlbars@^5.7.1:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-5.7.1.tgz#eb5b88c7d9083bc27665fb5447a9b7503b32ce4f"
   integrity sha512-9laCgL4tSy48orNoQgQKEHp93MaqAs9ZOl7or5q+8iyGGJHW6sVXIYrVv5/5O9HfV6Ts8/pW1rSoaeKyLUE+oA==
@@ -9844,13 +9805,6 @@ ember-export-application-global@2.0.1:
   resolved "https://registry.yarnpkg.com/ember-export-application-global/-/ember-export-application-global-2.0.1.tgz#b120a70e322ab208defc9e2daebe8d0dfc2dcd46"
   integrity sha512-B7wiurPgsxsSGzJuPFkpBWnaeuCu2PGpG2BjyrfA1VcL7//o+5RSnZqiCEY326y7qmxb2GoCgo0ft03KBU0rRw==
 
-ember-factory-for-polyfill@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/ember-factory-for-polyfill/-/ember-factory-for-polyfill-1.3.1.tgz#b446ed64916d293c847a4955240eb2c993b86eae"
-  integrity sha512-y3iG2iCzH96lZMTWQw6LWNLAfOmDC4pXKbZP6FxG8lt7GGaNFkZjwsf+Z5GAe7kxfD7UG4lVkF7x37K82rySGA==
-  dependencies:
-    ember-cli-version-checker "^2.1.0"
-
 ember-inflector@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/ember-inflector/-/ember-inflector-4.0.1.tgz#e0aa9e39119156a278c80bb8cdec8462ecb8e6ab"
@@ -10049,15 +10003,14 @@ ember-try@1.4.0:
     rsvp "^4.7.0"
     walk-sync "^1.1.3"
 
-ember-welcome-page@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/ember-welcome-page/-/ember-welcome-page-4.1.0.tgz#eab93852046140b28b36074ff1600e63a0b56973"
-  integrity sha512-+itRRxfHnuaaLptQhivzSuEwLxLM9rg6LVsQFRb/1+PlSzirpuqp/lrfX4f02HGR9W5aZzhd7j1GQwIsEZf38g==
+ember-welcome-page@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/ember-welcome-page/-/ember-welcome-page-5.0.0.tgz#a01ece4cc128d234f5641b69a1730085c86d2ffd"
+  integrity sha512-GJMmcrGpnAXFBkJtmjOa2LT2Hazr8JW5WElSiep65pBBBY4PCRwo1Miw/yme78IJCgVLROT/3tISwH00t4gslA==
   dependencies:
-    ember-cli-babel "^7.23.1"
-    ember-cli-htmlbars "^5.6.2"
+    ember-cli-babel "^7.26.6"
+    ember-cli-htmlbars "^5.7.1"
     ember-compatibility-helpers "^1.2.2"
-    ember-factory-for-polyfill "^1.3.1"
 
 emit-function@0.0.2:
   version "0.0.2"
