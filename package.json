@@ -32,7 +32,7 @@
     "@types/ember": "3.16.7",
     "@types/ember-data": "3.16.16",
     "broccoli-asset-rev": "3.0.0",
-    "ember-ajax": "5.1.1",
+    "ember-ajax": "5.1.2",
     "ember-cli": "3.28.5",
     "ember-cli-app-version": "3.2.0",
     "ember-cli-babel": "7.26.11",
