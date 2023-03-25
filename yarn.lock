@@ -5218,10 +5218,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/ember-data@3.16.16":
-  version "3.16.16"
-  resolved "https://registry.yarnpkg.com/@types/ember-data/-/ember-data-3.16.16.tgz#351246f4214e865f88957c1fb88c47c8728118a2"
-  integrity sha512-O+KP7aMz4CcSkK3yM5kYpbpYz9kcDvVL1j6MLpBaraooDN+VBfOwCcnP8RQj6+mVjbsePJdWUN7ALCUVXjRgXw==
+"@types/ember-data@3.16.20":
+  version "3.16.20"
+  resolved "https://registry.yarnpkg.com/@types/ember-data/-/ember-data-3.16.20.tgz#4f43ee9ed9c9ddc6f904f782791b6d9336695269"
+  integrity sha512-w7QBvUKEZKjHc0pmRNV9iu80C2vgD/NzUZb+EcmPizFE1fcg56lcbe2NZ4hm6LVXfdM8b3KNgEbsiAiCvB8dug==
   dependencies:
     "@types/ember" "^3"
     "@types/ember__object" "^3"
