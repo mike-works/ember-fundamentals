@@ -6110,10 +6110,10 @@
     "@types/ember__object" "^3"
     "@types/rsvp" "*"
 
-"@types/ember@3.16.7":
-  version "3.16.7"
-  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-3.16.7.tgz#3072977a880723f304a24e0e83d358869e72587b"
-  integrity sha512-8/L9qJSgMLlV6yMCahVsErikwOU35aZbP1k37iHmlfp6srGaaTQNskKXTkZ4rjOGEEH+BaVh7+0SWrR5wDWHKA==
+"@types/ember@3.16.8":
+  version "3.16.8"
+  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-3.16.8.tgz#27096df84d3420ef5a385a49bd1680efac734e01"
+  integrity sha512-Wl30X9uvvmAfUZRaCdmbc+EFVBE3dvAo4+PEdvBBrJbKuTci9jv/AW3U+cHwbHamESU+33wIEm5Ia+pwNvE01Q==
   dependencies:
     "@types/ember__application" "^3"
     "@types/ember__array" "^3"
