@@ -6101,10 +6101,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/ember-data@3.16.20":
-  version "3.16.20"
-  resolved "https://registry.yarnpkg.com/@types/ember-data/-/ember-data-3.16.20.tgz#4f43ee9ed9c9ddc6f904f782791b6d9336695269"
-  integrity sha512-w7QBvUKEZKjHc0pmRNV9iu80C2vgD/NzUZb+EcmPizFE1fcg56lcbe2NZ4hm6LVXfdM8b3KNgEbsiAiCvB8dug==
+"@types/ember-data@3.16.21":
+  version "3.16.21"
+  resolved "https://registry.yarnpkg.com/@types/ember-data/-/ember-data-3.16.21.tgz#aecb8b360637a56fd3f1f9c28b8edec5ade75052"
+  integrity sha512-yRh5j8/WZPZAsXvehk0+rgoOV6dthwnuTD7R8ZIvfpRKcHoUJYTISYo0OUA/dZuL/fDl91DVgcbir3emVKr8YQ==
   dependencies:
     "@types/ember" "^3"
     "@types/ember__object" "^3"
