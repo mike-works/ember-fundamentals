@@ -30,7 +30,7 @@
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/git": "7.0.18",
     "@types/ember": "3.16.8",
-    "@types/ember-data": "3.16.20",
+    "@types/ember-data": "3.16.21",
     "broccoli-asset-rev": "3.0.0",
     "ember-ajax": "5.1.2",
     "ember-cli": "3.28.6",
